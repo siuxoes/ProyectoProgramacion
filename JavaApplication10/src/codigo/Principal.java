@@ -1,4 +1,4 @@
-package siuxoes;
+package codigo;
 
 import java.sql.DriverManager;
 import java.sql.ResultSet;

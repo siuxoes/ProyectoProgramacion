@@ -1,4 +1,4 @@
-package siuxoes;
+package codigo;
 
 import javax.swing.*;
 
