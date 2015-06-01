@@ -344,16 +344,25 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="acertadas3">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="acertadas3ActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="totales3">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="totales3ActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="falladas3">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="falladas3ActionPerformed"/>
                       </Events>
@@ -440,16 +449,25 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="acertadas2">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="acertadas2ActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="totales2">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="totales2ActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="falladas2">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="falladas2ActionPerformed"/>
                       </Events>
@@ -528,16 +546,25 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="acertadas1">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="acertadas1ActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="totales1">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="totales1ActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="falladas1">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="falladas1ActionPerformed"/>
                       </Events>
@@ -616,16 +643,25 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="acertadas">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="acertadasActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="totales">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="totalesActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="falladas">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="falladasActionPerformed"/>
                       </Events>

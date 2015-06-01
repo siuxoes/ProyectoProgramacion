@@ -208,18 +208,21 @@ public class Categorias extends javax.swing.JFrame {
 
         totalFalladas3.setText("Total falladas");
 
+        acertadas3.setEditable(false);
         acertadas3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 acertadas3ActionPerformed(evt);
             }
         });
 
+        totales3.setEditable(false);
         totales3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 totales3ActionPerformed(evt);
             }
         });
 
+        falladas3.setEditable(false);
         falladas3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 falladas3ActionPerformed(evt);
@@ -273,18 +276,21 @@ public class Categorias extends javax.swing.JFrame {
 
         totalFalladas2.setText("Total falladas");
 
+        acertadas2.setEditable(false);
         acertadas2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 acertadas2ActionPerformed(evt);
             }
         });
 
+        totales2.setEditable(false);
         totales2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 totales2ActionPerformed(evt);
             }
         });
 
+        falladas2.setEditable(false);
         falladas2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 falladas2ActionPerformed(evt);
@@ -335,18 +341,21 @@ public class Categorias extends javax.swing.JFrame {
 
         totalFalladas1.setText("Total falladas");
 
+        acertadas1.setEditable(false);
         acertadas1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 acertadas1ActionPerformed(evt);
             }
         });
 
+        totales1.setEditable(false);
         totales1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 totales1ActionPerformed(evt);
             }
         });
 
+        falladas1.setEditable(false);
         falladas1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 falladas1ActionPerformed(evt);
@@ -397,18 +406,21 @@ public class Categorias extends javax.swing.JFrame {
 
         totalFalladas.setText("Total falladas");
 
+        acertadas.setEditable(false);
         acertadas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 acertadasActionPerformed(evt);
             }
         });
 
+        totales.setEditable(false);
         totales.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 totalesActionPerformed(evt);
             }
         });
 
+        falladas.setEditable(false);
         falladas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 falladasActionPerformed(evt);

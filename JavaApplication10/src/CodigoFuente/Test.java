@@ -1,7 +1,10 @@
 
 package CodigoFuente;
 import java.applet.AudioClip;
+import java.sql.SQLException;
 import java.util.LinkedList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 /**
@@ -40,6 +43,7 @@ public final class Test extends javax.swing.JFrame {
             cf = new FuentePersonalizada("WOW.ttf");
         }
         tieneImagen(p1);
+        System.out.println(p1.getNombreImagen());
         initComponents();
     }
     
@@ -236,7 +240,7 @@ public final class Test extends javax.swing.JFrame {
         fallaste.setVisible(false);
         acertaste.setVisible(false);
         jButton1.setVisible(false);
-        verImagen.setVisible(false);
+        verImagen.setEnabled(false);
 
         Tab2.addTab("Test", jPanel3);
 
@@ -281,29 +285,45 @@ public final class Test extends javax.swing.JFrame {
 
     private void dActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dActionPerformed
         verificarRespuesta(principal1.comprobarRespuesta(d.getText(), p1));
-        actualizar();
+        try {
+            actualizar();
+        } catch (SQLException ex) {
+            Logger.getLogger(Test.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_dActionPerformed
 
     private void cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cActionPerformed
         verificarRespuesta(principal1.comprobarRespuesta(c.getText(), p1));
-        actualizar();
+        try {
+            actualizar();
+        } catch (SQLException ex) {
+            Logger.getLogger(Test.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_cActionPerformed
 
     private void bActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bActionPerformed
         verificarRespuesta(principal1.comprobarRespuesta(b.getText(), p1));
-        actualizar();
+        try {
+            actualizar();
+        } catch (SQLException ex) {
+            Logger.getLogger(Test.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_bActionPerformed
 
     private void aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aActionPerformed
         verificarRespuesta(principal1.comprobarRespuesta(a.getText(), p1));
-        actualizar();
+        try {
+            actualizar();
+        } catch (SQLException ex) {
+            Logger.getLogger(Test.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_aActionPerformed
 
     private void aMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aMouseClicked
 
     }//GEN-LAST:event_aMouseClicked
-                            public void actualizar(){
-        
+                            public void actualizar() throws SQLException{
+
         contPreguntas++;
         Acertadas.setText("Acertadas: " +acertadas);
         Falladas.setText("Falladas: " +falladas);
@@ -328,13 +348,24 @@ public final class Test extends javax.swing.JFrame {
             jButton1.setVisible(true);
             acertaste.setVisible(false);
             fallaste.setVisible(false);
+            principal1 = new Principal();
+            int t=0;
+            System.out.println(titulo);
+            if(titulo.equalsIgnoreCase("League of Legends"))
+                t=1;
+            else if(titulo.equalsIgnoreCase("Anime"))
+                t=2;
+            else if(titulo.equalsIgnoreCase("World of Warcraft"))
+                t=3;
+            String query="insert into estadisticas values(null, sysdate(),"+acertadas+","+falladas+","+t+")";
+            principal1.enviarEstadisticas(query);
        }
     }
-    public void verificarRespuesta(boolean resultado){
+    public void verificarRespuesta(boolean resultado) {
       
         cont++;
-             if(verImagen.isVisible()){
-         verImagen.setVisible(false);
+             if(verImagen.isEnabled()){
+         verImagen.setEnabled(false);
      }
         if(fallaste.isVisible() || acertaste.isVisible()){
             fallaste.setVisible(false);
@@ -381,9 +412,9 @@ public final class Test extends javax.swing.JFrame {
    
     public void tieneImagen(Pregunta p1){
         try{
-     if(!p1.getNombreImagen().equalsIgnoreCase("")){
+     if(!p1.getNombreImagen().equals("")){
+         verImagen.setEnabled(true);
          jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/"+p1.getNombreImagen())));
-         verImagen.setVisible(true);
      }
         }catch(NullPointerException npe){}
 
