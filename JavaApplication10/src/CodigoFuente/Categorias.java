@@ -43,7 +43,7 @@ public class Categorias extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(528, 524));
         setResizable(false);
 
-        Anime.setFont(cf3.MyFont(1, 34f));
+        Anime.setFont(cf3.MyFont(1, 32f));
         Anime.setText("Anime");
         Anime.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
