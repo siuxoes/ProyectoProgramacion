@@ -10,7 +10,8 @@ package CodigoFuente;
  * @author Siuxoes
  */
 public class Categorias extends javax.swing.JFrame {
-
+ 
+    private Principal p1;
     /**
      * Creates new form Categorias
      */
@@ -27,12 +28,49 @@ public class Categorias extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        FuentePersonalizada cf3 = new FuentePersonalizada("ANIME.ttf");
-        Anime = new javax.swing.JButton();
-        FuentePersonalizada cf2 = new FuentePersonalizada("WOW.ttf");
-        WoW = new javax.swing.JButton();
+        jTabbedPane2 = new javax.swing.JTabbedPane();
+        jPanel3 = new javax.swing.JPanel();
         FuentePersonalizada cf = new FuentePersonalizada("LOL.ttf");
         Lol1 = new javax.swing.JButton();
+        FuentePersonalizada cf2 = new FuentePersonalizada("WOW.ttf");
+        WoW = new javax.swing.JButton();
+        FuentePersonalizada cf3 = new FuentePersonalizada("ANIME.ttf");
+        Anime = new javax.swing.JButton();
+        jPanel4 = new javax.swing.JPanel();
+        Tab3 = new javax.swing.JTabbedPane();
+        jPanel1 = new javax.swing.JPanel();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        eGenerales = new javax.swing.JPanel();
+        totalResp4 = new javax.swing.JLabel();
+        totalAcertadas3 = new javax.swing.JLabel();
+        totalFalladas3 = new javax.swing.JLabel();
+        acertadas3 = new javax.swing.JTextField();
+        totales3 = new javax.swing.JTextField();
+        falladas3 = new javax.swing.JTextField();
+        eLol = new javax.swing.JPanel();
+        totalResp3 = new javax.swing.JLabel();
+        totalAcertadas2 = new javax.swing.JLabel();
+        totalFalladas2 = new javax.swing.JLabel();
+        acertadas2 = new javax.swing.JTextField();
+        totales2 = new javax.swing.JTextField();
+        falladas2 = new javax.swing.JTextField();
+        eWow = new javax.swing.JPanel();
+        totalResp2 = new javax.swing.JLabel();
+        totalAcertadas1 = new javax.swing.JLabel();
+        totalFalladas1 = new javax.swing.JLabel();
+        acertadas1 = new javax.swing.JTextField();
+        totales1 = new javax.swing.JTextField();
+        falladas1 = new javax.swing.JTextField();
+        eAnime = new javax.swing.JPanel();
+        totalResp = new javax.swing.JLabel();
+        totalAcertadas = new javax.swing.JLabel();
+        totalFalladas = new javax.swing.JLabel();
+        acertadas = new javax.swing.JTextField();
+        totales = new javax.swing.JTextField();
+        falladas = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Seleccione una categoría");
@@ -40,14 +78,16 @@ public class Categorias extends javax.swing.JFrame {
         setFocusable(false);
         setLocation(new java.awt.Point(0, 0));
         setLocationByPlatform(true);
-        setMinimumSize(new java.awt.Dimension(528, 524));
+        setMaximumSize(new java.awt.Dimension(533, 593));
+        setMinimumSize(new java.awt.Dimension(533, 593));
         setResizable(false);
 
-        Anime.setFont(cf3.MyFont(1, 32f));
-        Anime.setText("Anime");
-        Anime.addActionListener(new java.awt.event.ActionListener() {
+        Lol1.setFont(cf.MyFont(1, 22f));
+        Lol1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Icon.111954.png"))); // NOI18N
+        Lol1.setText("League of Legends");
+        Lol1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AnimeActionPerformed(evt);
+                Lol1ActionPerformed(evt);
             }
         });
 
@@ -60,37 +100,381 @@ public class Categorias extends javax.swing.JFrame {
             }
         });
 
-        Lol1.setFont(cf.MyFont(1, 22f));
-        Lol1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Icon.111954.png"))); // NOI18N
-        Lol1.setText("League of Legends");
-        Lol1.addActionListener(new java.awt.event.ActionListener() {
+        Anime.setFont(cf3.MyFont(1, 32f));
+        Anime.setText("Anime");
+        Anime.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Lol1ActionPerformed(evt);
+                AnimeActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(87, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(116, 116, 116)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(Anime, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Lol1, javax.swing.GroupLayout.DEFAULT_SIZE, 354, Short.MAX_VALUE)
+                    .addComponent(Lol1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(WoW, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(87, Short.MAX_VALUE))
+                .addGap(120, 120, 120))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(193, Short.MAX_VALUE)
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(220, Short.MAX_VALUE)
                 .addComponent(Anime, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Lol1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(WoW, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28))
+                .addGap(42, 42, 42))
+        );
+
+        jTabbedPane2.addTab("Principal", jPanel3);
+
+        Tab3.setMaximumSize(new java.awt.Dimension(528, 537));
+        Tab3.setMinimumSize(new java.awt.Dimension(528, 537));
+        Tab3.setPreferredSize(new java.awt.Dimension(528, 537));
+
+        jPanel1.setMaximumSize(new java.awt.Dimension(528, 537));
+        jPanel1.setMinimumSize(new java.awt.Dimension(528, 537));
+        jPanel1.setPreferredSize(new java.awt.Dimension(528, 537));
+
+        jButton5.setText("Estadísticas LOL");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+
+        jButton6.setText("Estadísticas WoW");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+
+        jButton7.setText("Estadísticas Anime");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+
+        jButton8.setText("Estadísticas Generales");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(170, 170, 170)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
+                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
+                    .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
+                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(191, 191, 191))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(165, 165, 165)
+                .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+                .addGap(28, 28, 28)
+                .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, 71, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, 71, Short.MAX_VALUE)
+                .addGap(23, 23, 23))
+        );
+
+        Tab3.addTab("Seleccionar estadísticas", jPanel1);
+
+        eGenerales.setMaximumSize(new java.awt.Dimension(528, 537));
+        eGenerales.setMinimumSize(new java.awt.Dimension(528, 537));
+
+        totalResp4.setText("Totales de respuestas:");
+
+        totalAcertadas3.setText("Total acertadas:");
+
+        totalFalladas3.setText("Total falladas");
+
+        acertadas3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                acertadas3ActionPerformed(evt);
+            }
+        });
+
+        totales3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                totales3ActionPerformed(evt);
+            }
+        });
+
+        falladas3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                falladas3ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout eGeneralesLayout = new javax.swing.GroupLayout(eGenerales);
+        eGenerales.setLayout(eGeneralesLayout);
+        eGeneralesLayout.setHorizontalGroup(
+            eGeneralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eGeneralesLayout.createSequentialGroup()
+                .addGap(112, 112, 112)
+                .addGroup(eGeneralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(totalResp4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(totalFalladas3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(totalAcertadas3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(29, 29, 29)
+                .addGroup(eGeneralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(acertadas3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(falladas3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(totales3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(157, Short.MAX_VALUE))
+        );
+        eGeneralesLayout.setVerticalGroup(
+            eGeneralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eGeneralesLayout.createSequentialGroup()
+                .addGap(68, 68, 68)
+                .addGroup(eGeneralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(totalResp4)
+                    .addComponent(totales3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34)
+                .addGroup(eGeneralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(totalAcertadas3)
+                    .addComponent(acertadas3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(39, 39, 39)
+                .addGroup(eGeneralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(totalFalladas3)
+                    .addComponent(falladas3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(336, Short.MAX_VALUE))
+        );
+
+        Tab3.addTab("Generales", eGenerales);
+        asignarResultados(0);
+
+        eLol.setMaximumSize(new java.awt.Dimension(528, 537));
+        eLol.setMinimumSize(new java.awt.Dimension(528, 537));
+
+        totalResp3.setText("Totales de respuestas:");
+
+        totalAcertadas2.setText("Total acertadas:");
+
+        totalFalladas2.setText("Total falladas");
+
+        acertadas2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                acertadas2ActionPerformed(evt);
+            }
+        });
+
+        totales2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                totales2ActionPerformed(evt);
+            }
+        });
+
+        falladas2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                falladas2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout eLolLayout = new javax.swing.GroupLayout(eLol);
+        eLol.setLayout(eLolLayout);
+        eLolLayout.setHorizontalGroup(
+            eLolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eLolLayout.createSequentialGroup()
+                .addGap(112, 112, 112)
+                .addGroup(eLolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(totalResp3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(totalFalladas2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(totalAcertadas2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(29, 29, 29)
+                .addGroup(eLolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(acertadas2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(falladas2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(totales2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(157, Short.MAX_VALUE))
+        );
+        eLolLayout.setVerticalGroup(
+            eLolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eLolLayout.createSequentialGroup()
+                .addGap(68, 68, 68)
+                .addGroup(eLolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(totalResp3)
+                    .addComponent(totales2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34)
+                .addGroup(eLolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(totalAcertadas2)
+                    .addComponent(acertadas2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(39, 39, 39)
+                .addGroup(eLolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(totalFalladas2)
+                    .addComponent(falladas2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(336, Short.MAX_VALUE))
+        );
+
+        Tab3.addTab("LoL", eLol);
+        asignarResultados(1);
+
+        totalResp2.setText("Totales de respuestas:");
+
+        totalAcertadas1.setText("Total acertadas:");
+
+        totalFalladas1.setText("Total falladas");
+
+        acertadas1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                acertadas1ActionPerformed(evt);
+            }
+        });
+
+        totales1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                totales1ActionPerformed(evt);
+            }
+        });
+
+        falladas1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                falladas1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout eWowLayout = new javax.swing.GroupLayout(eWow);
+        eWow.setLayout(eWowLayout);
+        eWowLayout.setHorizontalGroup(
+            eWowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eWowLayout.createSequentialGroup()
+                .addGap(112, 112, 112)
+                .addGroup(eWowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(totalResp2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(totalFalladas1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(totalAcertadas1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(29, 29, 29)
+                .addGroup(eWowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(acertadas1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(falladas1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(totales1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(152, Short.MAX_VALUE))
+        );
+        eWowLayout.setVerticalGroup(
+            eWowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eWowLayout.createSequentialGroup()
+                .addGap(68, 68, 68)
+                .addGroup(eWowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(totalResp2)
+                    .addComponent(totales1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34)
+                .addGroup(eWowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(totalAcertadas1)
+                    .addComponent(acertadas1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(39, 39, 39)
+                .addGroup(eWowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(totalFalladas1)
+                    .addComponent(falladas1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(336, Short.MAX_VALUE))
+        );
+
+        Tab3.addTab("WoW", eWow);
+        asignarResultados(3);
+
+        totalResp.setText("Totales de respuestas:");
+
+        totalAcertadas.setText("Total acertadas:");
+
+        totalFalladas.setText("Total falladas");
+
+        acertadas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                acertadasActionPerformed(evt);
+            }
+        });
+
+        totales.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                totalesActionPerformed(evt);
+            }
+        });
+
+        falladas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                falladasActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout eAnimeLayout = new javax.swing.GroupLayout(eAnime);
+        eAnime.setLayout(eAnimeLayout);
+        eAnimeLayout.setHorizontalGroup(
+            eAnimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eAnimeLayout.createSequentialGroup()
+                .addGap(112, 112, 112)
+                .addGroup(eAnimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(totalResp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(totalFalladas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(totalAcertadas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(29, 29, 29)
+                .addGroup(eAnimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(acertadas, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(falladas, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(totales, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(152, Short.MAX_VALUE))
+        );
+        eAnimeLayout.setVerticalGroup(
+            eAnimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(eAnimeLayout.createSequentialGroup()
+                .addGap(68, 68, 68)
+                .addGroup(eAnimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(totalResp)
+                    .addComponent(totales, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34)
+                .addGroup(eAnimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(totalAcertadas)
+                    .addComponent(acertadas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(39, 39, 39)
+                .addGroup(eAnimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(totalFalladas)
+                    .addComponent(falladas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(336, Short.MAX_VALUE))
+        );
+
+        Tab3.addTab("Anime", eAnime);
+        asignarResultados(2);
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Tab3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Tab3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jTabbedPane2.addTab("Estadisticas", jPanel4);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jTabbedPane2)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jTabbedPane2)
         );
 
         pack();
@@ -111,9 +495,140 @@ public class Categorias extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_WoWActionPerformed
 
+    private void falladasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_falladasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_falladasActionPerformed
+
+    private void totalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_totalesActionPerformed
+
+    private void acertadasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acertadasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_acertadasActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        Tab3.setSelectedIndex(1);
+        asignarResultados(0);
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        Tab3.setSelectedIndex(4);
+        asignarResultados(2);
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        Tab3.setSelectedIndex(3);
+        asignarResultados(3);
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        Tab3.setSelectedIndex(2);
+        asignarResultados(2);
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void acertadas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acertadas1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_acertadas1ActionPerformed
+
+    private void totales1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totales1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_totales1ActionPerformed
+
+    private void falladas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_falladas1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_falladas1ActionPerformed
+
+    private void acertadas2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acertadas2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_acertadas2ActionPerformed
+
+    private void totales2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totales2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_totales2ActionPerformed
+
+    private void falladas2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_falladas2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_falladas2ActionPerformed
+
+    private void acertadas3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acertadas3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_acertadas3ActionPerformed
+
+    private void totales3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totales3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_totales3ActionPerformed
+
+    private void falladas3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_falladas3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_falladas3ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Anime;
     private javax.swing.JButton Lol1;
+    private javax.swing.JTabbedPane Tab3;
     private javax.swing.JButton WoW;
+    private javax.swing.JTextField acertadas;
+    private javax.swing.JTextField acertadas1;
+    private javax.swing.JTextField acertadas2;
+    private javax.swing.JTextField acertadas3;
+    private javax.swing.JPanel eAnime;
+    private javax.swing.JPanel eGenerales;
+    private javax.swing.JPanel eLol;
+    private javax.swing.JPanel eWow;
+    private javax.swing.JTextField falladas;
+    private javax.swing.JTextField falladas1;
+    private javax.swing.JTextField falladas2;
+    private javax.swing.JTextField falladas3;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JTabbedPane jTabbedPane2;
+    private javax.swing.JLabel totalAcertadas;
+    private javax.swing.JLabel totalAcertadas1;
+    private javax.swing.JLabel totalAcertadas2;
+    private javax.swing.JLabel totalAcertadas3;
+    private javax.swing.JLabel totalFalladas;
+    private javax.swing.JLabel totalFalladas1;
+    private javax.swing.JLabel totalFalladas2;
+    private javax.swing.JLabel totalFalladas3;
+    private javax.swing.JLabel totalResp;
+    private javax.swing.JLabel totalResp2;
+    private javax.swing.JLabel totalResp3;
+    private javax.swing.JLabel totalResp4;
+    private javax.swing.JTextField totales;
+    private javax.swing.JTextField totales1;
+    private javax.swing.JTextField totales2;
+    private javax.swing.JTextField totales3;
     // End of variables declaration//GEN-END:variables
-}
+    
+    public void asignarResultados(int tema){
+            p1= new Principal();
+            int[] array;
+            array = p1.pedirEstadisticas(tema);
+            if(tema==2){
+            acertadas.setText(""+array[0]);
+            falladas.setText(""+array[1]);
+            totales.setText(""+array[2]);
+            }else if(tema==0){
+            acertadas3.setText(""+array[0]);
+            falladas3.setText(""+array[1]);
+            totales3.setText(""+array[2]);
+            }
+            else if(tema==1){
+            acertadas2.setText(""+array[0]);
+            falladas2.setText(""+array[1]);
+            totales2.setText(""+array[2]);
+            }
+             else if(tema==3){
+            acertadas1.setText(""+array[0]);
+            falladas1.setText(""+array[1]);
+            totales1.setText(""+array[2]);
+            }
+        }
+    }
+
