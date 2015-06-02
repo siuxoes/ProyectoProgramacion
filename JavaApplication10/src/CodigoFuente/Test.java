@@ -43,7 +43,6 @@ public final class Test extends javax.swing.JFrame {
             cf = new FuentePersonalizada("WOW.ttf");
         }
         tieneImagen(p1);
-        System.out.println(p1.getNombreImagen());
         initComponents();
     }
     

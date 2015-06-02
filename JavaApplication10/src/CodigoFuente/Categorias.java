@@ -680,6 +680,14 @@ public class Categorias extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
     
     public void asignarResultados(int tema){
+        File wow = new File("./src/imagenes/wow.jpeg");
+            wow.delete();
+            File lol = new File("./src/imagenes/lol.jpeg");
+            lol.delete();
+            File general = new File("./src/imagenes/general.jpeg");
+            general.delete();
+            File anime = new File("./src/imagenes/anime.jpeg");
+            anime.delete();
             p1= new Principal();
             g1 = new Graficos();
             int[] array;
