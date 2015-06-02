@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.14
+-- version 4.3.11
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-05-2015 a las 11:08:04
--- Versión del servidor: 5.6.17
--- Versión de PHP: 5.5.12
+-- Tiempo de generación: 02-06-2015 a las 02:59:13
+-- Versión del servidor: 5.6.24
+-- Versión de PHP: 5.6.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,8 +17,43 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de datos: `trivial`
+-- Base de datos: `base`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `estadisticas`
+--
+
+CREATE TABLE IF NOT EXISTS `estadisticas` (
+  `id` int(11) NOT NULL,
+  `fecha` date NOT NULL,
+  `acertadas` int(11) NOT NULL,
+  `falladas` int(11) NOT NULL,
+  `tema` int(11) NOT NULL
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `estadisticas`
+--
+
+INSERT INTO `estadisticas` (`id`, `fecha`, `acertadas`, `falladas`, `tema`) VALUES
+(4, '2015-06-02', 10, 0, 2),
+(3, '2015-06-02', 1, 2, 1),
+(5, '2015-06-02', 10, 0, 3),
+(6, '2015-06-02', 5, 5, 2),
+(7, '2015-06-02', 0, 10, 2),
+(8, '2015-06-02', 3, 7, 2),
+(9, '2015-06-02', 2, 8, 1),
+(10, '2015-06-02', 2, 8, 3),
+(11, '2015-06-02', 10, 0, 1),
+(12, '2015-06-02', 0, 10, 1),
+(13, '2015-06-02', 10, 0, 1),
+(14, '2015-06-02', 4, 6, 2),
+(15, '2015-06-02', 3, 7, 3),
+(16, '2015-06-02', 1, 9, 2),
+(17, '2015-06-02', 4, 6, 2);
 
 -- --------------------------------------------------------
 
@@ -34,9 +69,7 @@ CREATE TABLE IF NOT EXISTS `preguntas` (
   `C` varchar(100) NOT NULL,
   `respuesta` varchar(100) NOT NULL,
   `tema` int(11) NOT NULL COMMENT 'Tema al que referencia.',
-  `linkImagen` varchar(1000) DEFAULT NULL COMMENT 'Link de Imagen',
-  PRIMARY KEY (`iden`),
-  KEY `clav` (`tema`)
+  `linkImagen` varchar(1000) DEFAULT NULL COMMENT 'Link de Imagen'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Tabla que contendrá las preguntas y sus respuestas y a que tema referenciaran.';
 
 --
@@ -83,8 +116,7 @@ INSERT INTO `preguntas` (`iden`, `pregunta`, `A`, `B`, `C`, `respuesta`, `tema`,
 
 CREATE TABLE IF NOT EXISTS `temas` (
   `nombre` varchar(30) NOT NULL COMMENT 'Nombre del tema.',
-  `id` int(11) NOT NULL COMMENT 'Número que identificará el tema con sus preguntas',
-  PRIMARY KEY (`id`)
+  `id` int(11) NOT NULL COMMENT 'Número que identificará el tema con sus preguntas'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Se guardan los distintos temas del trivial.';
 
 --
@@ -97,6 +129,37 @@ INSERT INTO `temas` (`nombre`, `id`) VALUES
 ('Wow', 3);
 
 --
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `estadisticas`
+--
+ALTER TABLE `estadisticas`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `preguntas`
+--
+ALTER TABLE `preguntas`
+  ADD PRIMARY KEY (`iden`), ADD KEY `clav` (`tema`);
+
+--
+-- Indices de la tabla `temas`
+--
+ALTER TABLE `temas`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `estadisticas`
+--
+ALTER TABLE `estadisticas`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=18;
+--
 -- Restricciones para tablas volcadas
 --
 
@@ -104,7 +167,7 @@ INSERT INTO `temas` (`nombre`, `id`) VALUES
 -- Filtros para la tabla `preguntas`
 --
 ALTER TABLE `preguntas`
-  ADD CONSTRAINT `clav` FOREIGN KEY (`tema`) REFERENCES `temas` (`id`);
+ADD CONSTRAINT `clav` FOREIGN KEY (`tema`) REFERENCES `temas` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
