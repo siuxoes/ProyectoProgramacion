@@ -7,6 +7,7 @@ import java.util.LinkedList;
 import java.util.Scanner;
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.Statement;
+import java.io.File;
 import java.sql.SQLException;
 
 public class Principal {
@@ -147,6 +148,7 @@ public class Principal {
 	}
         
         public static void main(String[] args){
+           
             Categorias llamada = new Categorias();
              llamada.setVisible(true);
             llamada.setResizable(false);
