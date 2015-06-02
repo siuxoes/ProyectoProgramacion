@@ -707,6 +707,10 @@ public class Categorias extends javax.swing.JFrame {
             totales1.setText(""+array[2]);
             g1.generarGrafico(array[0], array[1], "wow");
             }
+            jLabel2.repaint();
+            jLabel1.repaint();
+            jLabel3.repaint();
+            jLabel5.repaint();
         }
     }
 
