@@ -244,7 +244,7 @@ public class Categorias extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/stats.jpeg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/general.jpeg"))); // NOI18N
         jLabel2.setText("jLabel1");
 
         javax.swing.GroupLayout eGeneralesLayout = new javax.swing.GroupLayout(eGenerales);
