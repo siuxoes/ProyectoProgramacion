@@ -19,14 +19,11 @@ public class Categorias extends javax.swing.JFrame {
      * Creates new form Categorias
      */
     public Categorias() {
-          File wow = new File("./src/imagenes/wow.jpeg");
-            wow.delete();
-            File lol = new File("./src/imagenes/lol.jpeg");
-            lol.delete();
-            File general = new File("./src/imagenes/general.jpeg");
-            general.delete();
-            File anime = new File("./src/imagenes/anime.jpeg");
-            anime.delete();
+        g1=new Graficos();
+        g1.generarGrafico(1, 1, "anime");
+        g1.generarGrafico(1, 1, "lol");
+        g1.generarGrafico(1, 1, "general");
+        g1.generarGrafico(1, 1, "wow");
         initComponents();
     }
 
@@ -91,7 +88,6 @@ public class Categorias extends javax.swing.JFrame {
         setTitle("Seleccione una categoría");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setFocusable(false);
-        setLocation(new java.awt.Point(0, 0));
         setLocationByPlatform(true);
         setMaximumSize(new java.awt.Dimension(533, 593));
         setMinimumSize(new java.awt.Dimension(533, 593));
@@ -680,14 +676,7 @@ public class Categorias extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
     
     public void asignarResultados(int tema){
-        File wow = new File("./src/imagenes/wow.jpeg");
-            wow.delete();
-            File lol = new File("./src/imagenes/lol.jpeg");
-            lol.delete();
-            File general = new File("./src/imagenes/general.jpeg");
-            general.delete();
-            File anime = new File("./src/imagenes/anime.jpeg");
-            anime.delete();
+          
             p1= new Principal();
             g1 = new Graficos();
             int[] array;
@@ -696,24 +685,20 @@ public class Categorias extends javax.swing.JFrame {
             acertadas.setText(""+array[0]);
             falladas.setText(""+array[1]);
             totales.setText(""+array[2]);
-            g1.generarGrafico(array[0], array[1], "anime");
             }else if(tema==0){
             acertadas3.setText(""+array[0]);
             falladas3.setText(""+array[1]);
             totales3.setText(""+array[2]);
-            g1.generarGrafico(array[0], array[1], "general");
             }
             else if(tema==1){
             acertadas2.setText(""+array[0]);
             falladas2.setText(""+array[1]);
             totales2.setText(""+array[2]);
-            g1.generarGrafico(array[0], array[1], "lol");
             }
              else if(tema==3){
             acertadas1.setText(""+array[0]);
             falladas1.setText(""+array[1]);
             totales1.setText(""+array[2]);
-            g1.generarGrafico(array[0], array[1], "wow");
             }
             jLabel2.repaint();
             jLabel1.repaint();
