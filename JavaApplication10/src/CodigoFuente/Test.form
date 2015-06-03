@@ -9,17 +9,19 @@
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
-    <Property name="title" type="java.lang.String" value="Test League of Legends"/>
+    <Property name="title" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+      <Connection code="&quot;Test de &quot;+titulo&#xd;&#xa;     " type="code"/>
+    </Property>
     <Property name="autoRequestFocus" type="boolean" value="false"/>
     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
       <Color id="Cursor Por defecto"/>
     </Property>
     <Property name="locationByPlatform" type="boolean" value="true"/>
     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[600, 637]"/>
+      <Dimension value="[533, 593]"/>
     </Property>
     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[600, 637]"/>
+      <Dimension value="[533, 593]"/>
     </Property>
     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="[600, 637]"/>
@@ -56,6 +58,9 @@
   </Layout>
   <SubComponents>
     <Container class="javax.swing.JTabbedPane" name="Tab2">
+      <Properties>
+        <Property name="tabLayoutPolicy" type="int" value="1"/>
+      </Properties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
       <SubComponents>
@@ -89,21 +94,21 @@
                           <Group type="102" attributes="0">
                               <Component id="jScrollPane1" min="-2" pref="437" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="verImagen" pref="97" max="32767" attributes="0"/>
+                              <Component id="verImagen" pref="149" max="32767" attributes="0"/>
                               <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="2" attributes="0">
-                                  <Component id="a" alignment="2" max="32767" attributes="0"/>
-                                  <Component id="b" alignment="2" max="32767" attributes="0"/>
-                                  <Component id="c" alignment="2" max="32767" attributes="0"/>
-                                  <Component id="d" alignment="2" max="32767" attributes="0"/>
+                                  <Component id="a" alignment="2" min="-2" pref="353" max="-2" attributes="0"/>
+                                  <Component id="b" alignment="2" min="-2" pref="355" max="-2" attributes="0"/>
+                                  <Component id="c" alignment="2" min="-2" pref="356" max="-2" attributes="0"/>
+                                  <Component id="d" alignment="2" min="-2" pref="356" max="-2" attributes="0"/>
                                   <Group type="102" alignment="2" attributes="0">
                                       <Component id="Acertadas" min="-2" pref="125" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="Falladas" min="-2" pref="125" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jButton1" min="-2" pref="161" max="-2" attributes="0"/>
+                                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
@@ -139,18 +144,20 @@
                       <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                       <Component id="a" min="-2" pref="62" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="b" min="-2" pref="56" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="b" min="-2" pref="63" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="c" min="-2" pref="60" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                       <Component id="d" min="-2" pref="64" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="Acertadas" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="Falladas" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButton1" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="Acertadas" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="Falladas" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jButton1" alignment="0" min="-2" pref="61" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="84" max="32767" attributes="0"/>
+                      <EmptySpace pref="70" max="32767" attributes="0"/>
                   </Group>
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
@@ -303,13 +310,16 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButton1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Volver a Categorias"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagenes/backarrow_2.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Abandonar y volver a categor&#xed;as"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
               </Events>
               <AuxValues>
-                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="jButton1.setVisible(false);"/>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="jButton1.setVisible(true);"/>
               </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="verImagen">
@@ -322,7 +332,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="verImagenActionPerformed"/>
               </Events>
               <AuxValues>
-                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="verImagen.setEnabled(false);"/>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="verImagen.setEnabled(false);&#xa;tieneImagen(p1);"/>
               </AuxValues>
             </Component>
           </SubComponents>

@@ -73,14 +73,17 @@ public final class Test extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Test League of Legends");
+        setTitle("Test de "+titulo
+        );
         setAutoRequestFocus(false);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setLocationByPlatform(true);
-        setMaximumSize(new java.awt.Dimension(600, 637));
-        setMinimumSize(new java.awt.Dimension(600, 637));
+        setMaximumSize(new java.awt.Dimension(533, 593));
+        setMinimumSize(new java.awt.Dimension(533, 593));
         setPreferredSize(new java.awt.Dimension(600, 637));
         setResizable(false);
+
+        Tab2.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
 
         jPanel3.setMaximumSize(new java.awt.Dimension(585, 637));
         jPanel3.setMinimumSize(new java.awt.Dimension(585, 637));
@@ -147,7 +150,8 @@ public final class Test extends javax.swing.JFrame {
 
         Falladas.setText("Falladas: "+falladas);
 
-        jButton1.setText("Volver a Categorias");
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/backarrow_2.png"))); // NOI18N
+        jButton1.setText("Abandonar y volver a categorías");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -173,20 +177,20 @@ public final class Test extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 437, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(verImagen, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE)
+                        .addComponent(verImagen, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
                         .addGap(23, 23, 23))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                            .addComponent(a, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(b, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(c, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(d, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(a, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(b, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(c, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(d, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addComponent(Acertadas, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(Falladas, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jButton1)))
                         .addGap(22, 22, 22))))
             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.CENTER, jPanel3Layout.createSequentialGroup()
@@ -212,17 +216,18 @@ public final class Test extends javax.swing.JFrame {
                 .addGap(49, 49, 49)
                 .addComponent(a, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(b, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(b, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(c, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(15, 15, 15)
                 .addComponent(d, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Acertadas)
-                    .addComponent(Falladas)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(84, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(Acertadas)
+                        .addComponent(Falladas))
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(70, Short.MAX_VALUE))
             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel3Layout.createSequentialGroup()
                     .addContainerGap()
@@ -238,8 +243,9 @@ public final class Test extends javax.swing.JFrame {
 
         fallaste.setVisible(false);
         acertaste.setVisible(false);
-        jButton1.setVisible(false);
+        jButton1.setVisible(true);
         verImagen.setEnabled(false);
+        tieneImagen(p1);
 
         Tab2.addTab("Test", jPanel3);
 
@@ -321,14 +327,12 @@ public final class Test extends javax.swing.JFrame {
     private void aMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aMouseClicked
 
     }//GEN-LAST:event_aMouseClicked
-                            public void actualizar() throws SQLException{
-
+    public void actualizar() throws SQLException{
         contPreguntas++;
         Acertadas.setText("Acertadas: " +acertadas);
         Falladas.setText("Falladas: " +falladas);
        if(cont<=principal1.devolverUltimaPregunta(1)){
             p1=listaTextos.pop();
-            System.out.println();
             Enunciado.setText(p1.getEnunciado());
             contador.setText(contPreguntas +" de 10 preguntas");
             a.setText(p1.getOpcionA());
@@ -344,12 +348,11 @@ public final class Test extends javax.swing.JFrame {
             d.setVisible(false);
             Enunciado.setVisible(false);
             contador.setVisible(false);
-            jButton1.setVisible(true);
+            jButton1.setText("Volver a Categorías");
             acertaste.setVisible(false);
             fallaste.setVisible(false);
             principal1 = new Principal();
             int t=0;
-            System.out.println(titulo);
             if(titulo.equalsIgnoreCase("League of Legends"))
                 t=1;
             else if(titulo.equalsIgnoreCase("Anime"))
