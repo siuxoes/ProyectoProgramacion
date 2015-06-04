@@ -76,6 +76,7 @@ public final class Test extends javax.swing.JFrame {
         setTitle("Test de "+titulo
         );
         setAutoRequestFocus(false);
+        setBackground(new java.awt.Color(0, 51, 102));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setLocationByPlatform(true);
         setMaximumSize(new java.awt.Dimension(533, 593));
@@ -83,6 +84,7 @@ public final class Test extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(600, 637));
         setResizable(false);
 
+        Tab2.setBackground(new java.awt.Color(255, 255, 255));
         Tab2.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
 
         jPanel3.setMaximumSize(new java.awt.Dimension(585, 637));
@@ -102,7 +104,7 @@ public final class Test extends javax.swing.JFrame {
         fallaste.setText("Fallaste");
 
         Enunciado.setEditable(false);
-        Enunciado.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Enunciado.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
         Enunciado.setText(p1.getEnunciado());
         Enunciado.setToolTipText("");
         jScrollPane1.setViewportView(Enunciado);
@@ -112,6 +114,7 @@ public final class Test extends javax.swing.JFrame {
         acertaste.setForeground(new java.awt.Color(51, 255, 51));
         acertaste.setText("Acertaste");
 
+        a.setBackground(new java.awt.Color(204, 204, 204));
         a.setText(p1.getOpcionA());
         a.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -124,6 +127,7 @@ public final class Test extends javax.swing.JFrame {
             }
         });
 
+        b.setBackground(new java.awt.Color(204, 204, 204));
         b.setText(p1.getOpcionB());
         b.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -131,6 +135,7 @@ public final class Test extends javax.swing.JFrame {
             }
         });
 
+        c.setBackground(new java.awt.Color(204, 204, 204));
         c.setText(p1.getOpcionC());
         c.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -138,6 +143,7 @@ public final class Test extends javax.swing.JFrame {
             }
         });
 
+        d.setBackground(new java.awt.Color(204, 204, 204));
         d.setText(p1.getOpcionD());
         d.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

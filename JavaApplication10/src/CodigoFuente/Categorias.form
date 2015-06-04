@@ -409,7 +409,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel2">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/imagenes/general.jpeg"/>
+                          <Image iconType="3" name="/imagenes/general.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="jLabel1"/>
                       </Properties>
@@ -532,7 +532,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel1">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/imagenes/lol.jpeg"/>
+                          <Image iconType="3" name="/imagenes/lol.png"/>
                         </Property>
                       </Properties>
                     </Component>
@@ -646,7 +646,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel5">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/imagenes/wow.jpeg"/>
+                          <Image iconType="3" name="/imagenes/wow.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="jLabel1"/>
                       </Properties>
@@ -764,7 +764,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel3">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/imagenes/anime.jpeg"/>
+                          <Image iconType="3" name="/imagenes/anime.png"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="jLabel1"/>
                       </Properties>

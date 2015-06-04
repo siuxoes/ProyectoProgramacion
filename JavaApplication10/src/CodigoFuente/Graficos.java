@@ -30,12 +30,12 @@ public class Graficos {
             dcd.addValue(acertadas, "Acertadas", "");
             dcd.addValue(falladas, "Falladas", "");  
             JFreeChart jf = ChartFactory.createBarChart3D("", "", "Respuestas", dcd, PlotOrientation.HORIZONTAL, true, true, true);
-            File fichero = new File("./src/imagenes/"+nombre+".jpeg");
+            File fichero = new File("./src/imagenes/"+nombre+".png");
             if(fichero.exists()){
                 fichero.delete();
             }
             output=new FileOutputStream(fichero, true);
-            ChartUtilities.writeChartAsJPEG(output, jf, 350, 250);
+            ChartUtilities.writeChartAsPNG(output, jf, 350, 250);
              
         }catch(IOException e){
 

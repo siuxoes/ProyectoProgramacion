@@ -264,7 +264,7 @@ public class Categorias extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/general.jpeg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/general.png"))); // NOI18N
         jLabel2.setText("jLabel1");
 
         javax.swing.GroupLayout eGeneralesLayout = new javax.swing.GroupLayout(eGenerales);
@@ -342,7 +342,7 @@ public class Categorias extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/lol.jpeg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/lol.png"))); // NOI18N
 
         javax.swing.GroupLayout eLolLayout = new javax.swing.GroupLayout(eLol);
         eLol.setLayout(eLolLayout);
@@ -416,7 +416,7 @@ public class Categorias extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/wow.jpeg"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/wow.png"))); // NOI18N
         jLabel5.setText("jLabel1");
 
         javax.swing.GroupLayout eWowLayout = new javax.swing.GroupLayout(eWow);
@@ -491,7 +491,7 @@ public class Categorias extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/anime.jpeg"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/anime.png"))); // NOI18N
         jLabel3.setText("jLabel1");
 
         javax.swing.GroupLayout eAnimeLayout = new javax.swing.GroupLayout(eAnime);
