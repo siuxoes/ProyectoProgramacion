@@ -5,6 +5,8 @@
  */
 package CodigoFuente;
 
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.io.File;
 
 /**
@@ -29,7 +31,7 @@ public class Categorias extends javax.swing.JFrame {
         test=p1.pedirEstadisticas(2);
         g1.generarGrafico(test[0], test[1], "anime");
         test=p1.pedirEstadisticas(3);
-        g1.generarGrafico(test[0], test[1], "wow");    
+        g1.generarGrafico(test[0], test[1], "wow");  
         initComponents();
     }
 
@@ -95,8 +97,11 @@ public class Categorias extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Seleccione una categoría");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setFocusTraversalPolicyProvider(true);
         setFocusable(false);
-        setLocationByPlatform(true);
+        setIconImage(getIconImage());
+        setIconImages(null);
+        setLocation(new java.awt.Point(250, 25));
         setMaximumSize(new java.awt.Dimension(533, 593));
         setMinimumSize(new java.awt.Dimension(533, 593));
         setResizable(false);
@@ -730,6 +735,6 @@ public class Categorias extends javax.swing.JFrame {
             jLabel1.repaint();
             jLabel3.repaint();
             jLabel5.repaint();
-        }
+        }    
     }
 
