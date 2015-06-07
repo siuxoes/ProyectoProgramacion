@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-06-2015 a las 02:59:13
+-- Tiempo de generación: 07-06-2015 a las 16:57:34
 -- Versión del servidor: 5.6.24
 -- Versión de PHP: 5.6.8
 
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `estadisticas` (
   `acertadas` int(11) NOT NULL,
   `falladas` int(11) NOT NULL,
   `tema` int(11) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=28 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `estadisticas`
@@ -53,7 +53,17 @@ INSERT INTO `estadisticas` (`id`, `fecha`, `acertadas`, `falladas`, `tema`) VALU
 (14, '2015-06-02', 4, 6, 2),
 (15, '2015-06-02', 3, 7, 3),
 (16, '2015-06-02', 1, 9, 2),
-(17, '2015-06-02', 4, 6, 2);
+(17, '2015-06-02', 4, 6, 2),
+(18, '2015-06-02', 2, 8, 2),
+(19, '2015-06-02', 3, 7, 2),
+(20, '2015-06-02', 4, 6, 2),
+(21, '2015-06-02', 3, 7, 2),
+(22, '2015-06-02', 6, 4, 2),
+(23, '2015-06-04', 5, 5, 2),
+(24, '2015-06-04', 3, 7, 3),
+(25, '2015-06-04', 4, 6, 2),
+(26, '2015-06-04', 1, 9, 2),
+(27, '2015-06-04', 2, 8, 2);
 
 -- --------------------------------------------------------
 
@@ -158,7 +168,7 @@ ALTER TABLE `temas`
 -- AUTO_INCREMENT de la tabla `estadisticas`
 --
 ALTER TABLE `estadisticas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=28;
 --
 -- Restricciones para tablas volcadas
 --
