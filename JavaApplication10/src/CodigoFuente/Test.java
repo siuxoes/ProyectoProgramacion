@@ -26,6 +26,11 @@ public final class Test extends javax.swing.JFrame {
     private String opcionUsuario;
 
     public Test(int tema){
+        inicializarTest(tema);
+        initComponents();
+    }
+
+    private void inicializarTest(int tema) {
         titulo="";
         principal1 = new Principal();
         int primeraPregunta = principal1.devolverPrimeraPregunta(tema);
@@ -33,21 +38,19 @@ public final class Test extends javax.swing.JFrame {
         listaTextos=principal1.devolverListaPreguntas(primeraPregunta, ultimaPregunta);
         p1=listaTextos.pop();
         if(tema==1){
-         cf = new FuentePersonalizada("LOL.ttf");
-         titulo="League Of Legends";
+            cf = new FuentePersonalizada("LOL.ttf");
+            titulo="League Of Legends";
         }else if(tema==2){
             titulo="Anime";
-          cf = new FuentePersonalizada("Anime.ttf");
+            cf = new FuentePersonalizada("Anime.ttf");
         }else if(tema==3){
             titulo="World of Warcraft";
             cf = new FuentePersonalizada("WOW.ttf");
         }
         tieneImagen(p1);
-        initComponents();
     }
     
-    public Test(){
-      
+    public Test(){    
     }
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -346,8 +349,7 @@ public final class Test extends javax.swing.JFrame {
             c.setText(p1.getOpcionC());
             d.setText(p1.getOpcionD());
             tieneImagen(p1);
-        } else{    
-           
+        } else{              
             a.setVisible(false);
             b.setVisible(false);
             c.setVisible(false);
@@ -369,8 +371,7 @@ public final class Test extends javax.swing.JFrame {
             principal1.enviarEstadisticas(query);
        }
     }
-    public void verificarRespuesta(boolean resultado) {
-      
+    public void verificarRespuesta(boolean resultado) {     
         cont++;
              if(verImagen.isEnabled()){
          verImagen.setEnabled(false);
@@ -380,22 +381,19 @@ public final class Test extends javax.swing.JFrame {
             acertaste.setVisible(false);
         }
         if(!resultado){
-                        AudioClip sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/Error.wav"));
-
+            AudioClip sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/Error.wav"));
             sonido.play();
             falladas++;
             fallaste.setVisible(true);
         }
         else{
-                        AudioClip sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/Acierto.wav"));
-
+            AudioClip sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/Acierto.wav"));
             sonido.play();
             acertadas++;
             acertaste.setVisible(true);
         }
     }
-    
-    	
+       	
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Acertadas;
     private javax.swing.JTextPane Enunciado;
@@ -426,8 +424,6 @@ public final class Test extends javax.swing.JFrame {
      }
         }catch(NullPointerException npe){}
 
-    }
-        public void areYouSure(){
     }
 
     /**

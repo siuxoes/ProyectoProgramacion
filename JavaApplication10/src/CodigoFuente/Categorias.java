@@ -706,8 +706,7 @@ public class Categorias extends javax.swing.JFrame {
     private javax.swing.JTextField totales3;
     // End of variables declaration//GEN-END:variables
     
-    public void asignarResultados(int tema){
-          
+    public void asignarResultados(int tema){      
             p1= new Principal();
             g1 = new Graficos();
             int[] array;
