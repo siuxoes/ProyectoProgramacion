@@ -1,14 +1,6 @@
 package CodigoFuente;
 
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.util.Collections;
-import java.util.LinkedList;
 import java.util.Scanner;
-import com.mysql.jdbc.Connection;
-import com.mysql.jdbc.Statement;
-import java.io.File;
-import java.sql.SQLException;
 
 public class Principal extends Estadisticas {
 

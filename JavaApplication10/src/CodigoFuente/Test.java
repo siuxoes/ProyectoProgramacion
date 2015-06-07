@@ -1,5 +1,5 @@
-
 package CodigoFuente;
+
 import java.applet.AudioClip;
 import java.sql.SQLException;
 import java.util.LinkedList;
@@ -7,10 +7,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
-/**
- *
- * @author Siuxoes
- */
 public final class Test extends javax.swing.JFrame {
     private String titulo;
     private Pregunta p1;
