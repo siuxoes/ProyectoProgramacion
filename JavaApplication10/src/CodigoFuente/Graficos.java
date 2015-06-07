@@ -15,7 +15,14 @@ import org.jfree.chart.ChartUtilities;
  */
 public class Graficos {
     
-  
+  /**
+   * Método para generar un gráfico en función
+   * de las preguntas acertadas y falladas que tengas
+   * @param acertadas
+   * @param falladas
+   * @param nombre 
+   * @return 
+   */
     public static void generarGrafico(int acertadas, int falladas, String nombre) {
         FileOutputStream output=null;
           File fichero;

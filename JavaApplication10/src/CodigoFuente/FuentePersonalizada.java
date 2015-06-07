@@ -24,6 +24,12 @@ public class FuentePersonalizada {
     /* Font.PLAIN = 0 , Font.BOLD = 1 , Font.ITALIC = 2
  * tamanio = float
  */
+    /**
+     * Método para cargar una fuente propia
+     * @param estilo
+     * @param tamanio
+     * @return tfont
+     */
     public Font MyFont( int estilo, float tamanio)
     {
         Font tfont = font.deriveFont(estilo, tamanio);

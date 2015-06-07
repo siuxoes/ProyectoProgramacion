@@ -7,6 +7,13 @@ import java.sql.SQLException;
 
 public class Estadisticas extends OperacionesConBD {
 
+    /**
+     * Método para enviar las estadísticas
+     * a la base de datos
+     * @param instruccion
+     * @throws SQLException
+     * @return 
+     */
     public void enviarEstadisticas(String instruccion) throws SQLException {
         Statement st = null;
         try {
@@ -22,6 +29,12 @@ public class Estadisticas extends OperacionesConBD {
         }
     }
 
+    /**
+     * Método para consultar las estadísticas
+     * en la base de datos
+     * @param tema
+     * @return arr[]
+     */
     public int[] pedirEstadisticas(int tema) {
         int[] arr = new int[3];
         String query;
