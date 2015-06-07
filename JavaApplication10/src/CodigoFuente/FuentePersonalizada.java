@@ -9,6 +9,12 @@ public class FuentePersonalizada {
 
     private Font font = null;
 
+    /**
+     * Recibe el nombre de al fuenta a cargar
+     * y comprueba si ésta existe, si es así 
+     * la carga, sino carga la fuente Arial.
+     * @param nombreFuente 
+     */
     public FuentePersonalizada(String nombreFuente) {
         try {
             //Se carga la fuente
@@ -21,9 +27,6 @@ public class FuentePersonalizada {
         }
   }
 
-    /* Font.PLAIN = 0 , Font.BOLD = 1 , Font.ITALIC = 2
- * tamanio = float
- */
     /**
      * Método para cargar una fuente propia
      * @param estilo

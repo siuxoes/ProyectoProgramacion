@@ -3,7 +3,6 @@ package CodigoFuente;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.logging.Logger;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;
@@ -25,7 +24,7 @@ public class Graficos {
    */
     public static void generarGrafico(int acertadas, int falladas, String nombre) {
         FileOutputStream output=null;
-          File fichero;
+        File fichero;
         try{
             DefaultCategoryDataset dcd = new DefaultCategoryDataset();
             dcd.addValue(acertadas, "Acertadas", "");
@@ -39,7 +38,6 @@ public class Graficos {
             ChartUtilities.writeChartAsPNG(output, jf, 350, 250);            
         }catch(IOException e){
 
-        }
-        
+        }       
     }
 }

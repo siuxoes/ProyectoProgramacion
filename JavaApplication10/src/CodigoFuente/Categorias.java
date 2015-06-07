@@ -95,6 +95,7 @@ public class Categorias extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Seleccione una categoría");
+        setBackground(new java.awt.Color(0, 153, 255));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setFocusTraversalPolicyProvider(true);
         setFocusable(false);
@@ -105,20 +106,25 @@ public class Categorias extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(533, 593));
         setResizable(false);
 
+        jTabbedPane2.setBackground(new java.awt.Color(153, 153, 153));
         jTabbedPane2.setMaximumSize(new java.awt.Dimension(533, 593));
         jTabbedPane2.setMinimumSize(new java.awt.Dimension(533, 593));
 
+        jPanel3.setBackground(new java.awt.Color(51, 153, 255));
+
+        Lol1.setBackground(new java.awt.Color(102, 204, 255));
         Lol1.setFont(cf.MyFont(1, 22f));
-        Lol1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Icon.111954.png"))); // NOI18N
-        Lol1.setText("League of Legends");
+        Lol1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/loliconpng.png"))); // NOI18N
+        Lol1.setText("LoL");
         Lol1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Lol1ActionPerformed(evt);
             }
         });
 
+        WoW.setBackground(new java.awt.Color(102, 204, 255));
         WoW.setFont(cf2.MyFont(1, 22f));
-        WoW.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/292635_661341867225566_1983435009_n.png"))); // NOI18N
+        WoW.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/wowiconpng.png"))); // NOI18N
         WoW.setText("WoW");
         WoW.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,6 +132,7 @@ public class Categorias extends javax.swing.JFrame {
             }
         });
 
+        Anime.setBackground(new java.awt.Color(102, 204, 255));
         Anime.setFont(cf3.MyFont(1, 32f));
         Anime.setText("Anime");
         Anime.addActionListener(new java.awt.event.ActionListener() {
