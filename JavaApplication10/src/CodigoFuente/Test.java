@@ -21,11 +21,23 @@ public final class Test extends javax.swing.JFrame {
     String Ra="",Rb="",Rc="",Rd="";
     private String opcionUsuario;
 
+    /**
+     * Constructor que requiere el parametro tema
+     * y inicializa el metodo inicializarTest y
+     * ejecuta los valores para cada test
+     * @param tema 
+     * @see #inicializarTest(int) 
+     */
     public Test(int tema){
         inicializarTest(tema);
         initComponents();
     }
 
+    /**
+     * Método que inicializa los valores por defecto de 
+     * cada test segun su tema
+     * @param tema 
+     */
     private void inicializarTest(int tema) {
         titulo="";
         principal1 = new Principal();
@@ -46,6 +58,9 @@ public final class Test extends javax.swing.JFrame {
         tieneImagen(p1);
     }
     
+    /**
+     * Contructor vacio
+     */
     public Test(){    
     }
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -332,6 +347,11 @@ public final class Test extends javax.swing.JFrame {
     private void aMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aMouseClicked
 
     }//GEN-LAST:event_aMouseClicked
+  /**
+   * Metodo que se ejecuta tras contestar cada pregunta
+   * y actualiza el texto de cada pregunta.
+   * @throws SQLException 
+   */
     public void actualizar() throws SQLException{
         contPreguntas++;
         Acertadas.setText("Acertadas: " +acertadas);
@@ -367,6 +387,13 @@ public final class Test extends javax.swing.JFrame {
             principal1.enviarEstadisticas(query);
        }
     }
+ 
+    /**
+     * Metodo que recibe si la respuesta del usuario es correta(true)
+     * o falsa(false) y muestra "Acertaste" o "fallaste, y reproduce
+     * el sonido correspondiente
+     * @param resultado 
+     */
     public void verificarRespuesta(boolean resultado) {     
         cont++;
              if(verImagen.isEnabled()){
@@ -412,6 +439,11 @@ public final class Test extends javax.swing.JFrame {
     private javax.swing.JButton verImagen;
     // End of variables declaration//GEN-END:variables
    
+    /**
+     * Metodo que comprueba si una pregunta
+     * tiene una imagen asociada o no.
+     * @param p1 
+     */
     public void tieneImagen(Pregunta p1){
         try{
      if(!p1.getNombreImagen().equals("")){

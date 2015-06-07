@@ -10,6 +10,16 @@ public class Pregunta {
 	private String opcionD;
 	private String nombreImagen;
 	
+        /**
+         * Constructor de la clase Pregunta
+         * @param identificador
+         * @param enunciado
+         * @param opcionA
+         * @param opcionB
+         * @param opcionC
+         * @param opcionD
+         * @param nombreImagen 
+         */
 	public Pregunta(int identificador, String enunciado, String opcionA, String opcionB,
 		String opcionC, String opcionD, String nombreImagen) {
 		this.identificador = identificador;

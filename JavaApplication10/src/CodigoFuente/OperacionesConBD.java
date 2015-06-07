@@ -9,6 +9,11 @@ import java.util.LinkedList;
 
 public class OperacionesConBD {
 
+    /**
+     * Metodo que devuelve la conexión a la base de datos
+     * @return
+     * @throws Exception 
+     */
     protected static Connection getConnection() throws Exception {
         String driver = "com.mysql.jdbc.Driver";
         String url = "jdbc:mysql://localhost/base";
@@ -19,6 +24,12 @@ public class OperacionesConBD {
         return con;
     }
 
+    /**
+     * Metodo que se conecta a la base de datos
+     * ejecuta query, y devuelve una sola sentencia
+     * @param query
+     * @return 
+     */
     public static String conectar(String query) {
         String cadena = "";
         try {
@@ -34,6 +45,13 @@ public class OperacionesConBD {
         return cadena;
     }
 
+    /**
+     * Metodo que crea un objeto
+     * de la clase Pregunta segun el 
+     * identificador único.
+     * @param identificador
+     * @return 
+     */
     public Pregunta crearPregunta(int identificador) {
         Pregunta temp = null;
         try {
@@ -65,14 +83,32 @@ public class OperacionesConBD {
         return temp;
     }
 
+    /**
+     * Metodo que devuelve el indice de
+     * la primera pregunta de un tema
+     * @param tema
+     * @return 
+     */
     public int devolverPrimeraPregunta(int tema) {
         return Integer.parseInt(conectar("select iden from preguntas where tema=" + tema + " limit 1"));
     }
 
+    /**
+     * Metodo que devuelve el indice de
+     * la ultima pregunta de un tema
+     * @param tema
+     * @return 
+     */
     public int devolverUltimaPregunta(int tema) {
         return Integer.parseInt(conectar("select iden from preguntas where tema=" + tema + " order by 1 desc limit 1"));
     }
 
+    /**
+     * Crea una lista con los indices de las preguntas(numericos)
+     * @param primera
+     * @param ultima
+     * @return 
+     */
     public LinkedList<Integer> crearListaIndicePreguntas(int primera, int ultima) {
         LinkedList<Integer> listaPreguntas = new LinkedList<>();
         for (int i = primera; i <= ultima; i++) {
@@ -82,6 +118,13 @@ public class OperacionesConBD {
         return listaPreguntas;
     }
 
+    /**
+     * Crea una lista con objetos preguntas, que recibe de una lista de 
+     * indice de preguntas
+     * @param primeraPregunta
+     * @param ultimaPregunta
+     * @return 
+     */
     public LinkedList<Pregunta> devolverListaPreguntas(int primeraPregunta, int ultimaPregunta) {
         LinkedList<Pregunta> lista = new LinkedList<Pregunta>();
         LinkedList<Integer> listaPreguntasIndice = crearListaIndicePreguntas(primeraPregunta, ultimaPregunta);
@@ -91,7 +134,14 @@ public class OperacionesConBD {
         }
         return lista;
     }
-
+    /**
+     * Metodo que conecta con la base de datos y devuelve la respuesta
+     * segun el identificador una pregunta
+     * y comprueba con la entrada de usuario
+     * @param resp
+     * @param p1
+     * @return 
+     */
     public boolean comprobarRespuesta(String resp, Pregunta p1) {
         String respCorrecta = conectar("select respuesta from preguntas where iden=" + p1.getIdentificador());
         return resp.equalsIgnoreCase(respCorrecta);
