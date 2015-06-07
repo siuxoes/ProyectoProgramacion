@@ -119,7 +119,7 @@ public final class Test extends javax.swing.JFrame {
         fallaste.setText("Fallaste");
 
         Enunciado.setEditable(false);
-        Enunciado.setFont(new java.awt.Font("Georgia", 1, 18)); // NOI18N
+        Enunciado.setFont(new java.awt.Font("Georgia", 1, 14)); // NOI18N
         Enunciado.setText(p1.getEnunciado());
         Enunciado.setToolTipText("");
         jScrollPane1.setViewportView(Enunciado);
