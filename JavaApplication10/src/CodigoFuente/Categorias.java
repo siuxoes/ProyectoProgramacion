@@ -21,6 +21,11 @@ public class Categorias extends javax.swing.JFrame {
      * Creates new form Categorias
      */
     public Categorias() {
+        inicializarDatosCategorias();
+        initComponents();
+    }
+
+    private void inicializarDatosCategorias() {
         int[] test = new int[3];
         g1=new Graficos();
         p1=new Principal();
@@ -31,8 +36,7 @@ public class Categorias extends javax.swing.JFrame {
         test=p1.pedirEstadisticas(2);
         g1.generarGrafico(test[0], test[1], "anime");
         test=p1.pedirEstadisticas(3);
-        g1.generarGrafico(test[0], test[1], "wow");  
-        initComponents();
+        g1.generarGrafico(test[0], test[1], "wow");
     }
 
     /**
