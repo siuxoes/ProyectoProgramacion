@@ -22,7 +22,6 @@ public class Estadisticas extends OperacionesConBD {
             st = (Statement) con.createStatement();
             st.executeUpdate(query);
         } catch (Exception e) {
-            System.err.println("Got an exception! ");
             System.err.println(e.getMessage());
         } finally {
             st.close();

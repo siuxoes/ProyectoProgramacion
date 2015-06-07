@@ -95,7 +95,7 @@ public class Categorias extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Seleccione una categoría");
-        setBackground(new java.awt.Color(0, 153, 255));
+        setBackground(new java.awt.Color(51, 153, 255));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setFocusTraversalPolicyProvider(true);
         setFocusable(false);
@@ -172,14 +172,18 @@ public class Categorias extends javax.swing.JFrame {
 
         jTabbedPane2.addTab("Principal", jPanel3);
 
+        jPanel4.setBackground(new java.awt.Color(51, 153, 255));
+
         Tab3.setMaximumSize(new java.awt.Dimension(528, 537));
         Tab3.setMinimumSize(new java.awt.Dimension(528, 537));
         Tab3.setPreferredSize(new java.awt.Dimension(528, 537));
 
+        jPanel1.setBackground(new java.awt.Color(51, 153, 255));
         jPanel1.setMaximumSize(new java.awt.Dimension(528, 537));
         jPanel1.setMinimumSize(new java.awt.Dimension(528, 537));
         jPanel1.setPreferredSize(new java.awt.Dimension(528, 537));
 
+        jButton5.setBackground(new java.awt.Color(102, 204, 255));
         jButton5.setText("Estadísticas LOL");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -187,6 +191,7 @@ public class Categorias extends javax.swing.JFrame {
             }
         });
 
+        jButton6.setBackground(new java.awt.Color(102, 204, 255));
         jButton6.setText("Estadísticas WoW");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -194,6 +199,7 @@ public class Categorias extends javax.swing.JFrame {
             }
         });
 
+        jButton7.setBackground(new java.awt.Color(102, 204, 255));
         jButton7.setText("Estadísticas Anime");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -201,6 +207,7 @@ public class Categorias extends javax.swing.JFrame {
             }
         });
 
+        jButton8.setBackground(new java.awt.Color(102, 204, 255));
         jButton8.setText("Estadísticas Generales");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -245,13 +252,17 @@ public class Categorias extends javax.swing.JFrame {
 
         Tab3.addTab("Seleccionar estadísticas", jPanel1);
 
+        eGenerales.setBackground(new java.awt.Color(51, 153, 255));
         eGenerales.setMaximumSize(new java.awt.Dimension(528, 537));
         eGenerales.setMinimumSize(new java.awt.Dimension(528, 537));
 
+        totalResp4.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         totalResp4.setText("Totales de respuestas:");
 
+        totalAcertadas3.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         totalAcertadas3.setText("Total acertadas:");
 
+        totalFalladas3.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         totalFalladas3.setText("Total falladas");
 
         acertadas3.setEditable(false);
@@ -298,7 +309,7 @@ public class Categorias extends javax.swing.JFrame {
                     .addGroup(eGeneralesLayout.createSequentialGroup()
                         .addGap(89, 89, 89)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(90, Short.MAX_VALUE))
+                .addContainerGap(82, Short.MAX_VALUE))
         );
         eGeneralesLayout.setVerticalGroup(
             eGeneralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -315,7 +326,7 @@ public class Categorias extends javax.swing.JFrame {
                 .addGroup(eGeneralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(totalFalladas3)
                     .addComponent(falladas3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addGap(43, 43, 43))
         );
@@ -323,13 +334,17 @@ public class Categorias extends javax.swing.JFrame {
         Tab3.addTab("Generales", eGenerales);
         asignarResultados(0);
 
+        eLol.setBackground(new java.awt.Color(51, 153, 255));
         eLol.setMaximumSize(new java.awt.Dimension(528, 537));
         eLol.setMinimumSize(new java.awt.Dimension(528, 537));
 
+        totalResp3.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         totalResp3.setText("Totales de respuestas:");
 
+        totalAcertadas2.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         totalAcertadas2.setText("Total acertadas:");
 
+        totalFalladas2.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         totalFalladas2.setText("Total falladas");
 
         acertadas2.setEditable(false);
@@ -375,7 +390,7 @@ public class Categorias extends javax.swing.JFrame {
                     .addGroup(eLolLayout.createSequentialGroup()
                         .addGap(76, 76, 76)
                         .addComponent(jLabel1)))
-                .addContainerGap(102, Short.MAX_VALUE))
+                .addContainerGap(82, Short.MAX_VALUE))
         );
         eLolLayout.setVerticalGroup(
             eLolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -400,10 +415,15 @@ public class Categorias extends javax.swing.JFrame {
         Tab3.addTab("LoL", eLol);
         asignarResultados(1);
 
+        eWow.setBackground(new java.awt.Color(51, 153, 255));
+
+        totalResp2.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         totalResp2.setText("Totales de respuestas:");
 
+        totalAcertadas1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         totalAcertadas1.setText("Total acertadas:");
 
+        totalFalladas1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         totalFalladas1.setText("Total falladas");
 
         acertadas1.setEditable(false);
@@ -450,7 +470,7 @@ public class Categorias extends javax.swing.JFrame {
                     .addGroup(eWowLayout.createSequentialGroup()
                         .addGap(82, 82, 82)
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(92, Short.MAX_VALUE))
+                .addContainerGap(77, Short.MAX_VALUE))
         );
         eWowLayout.setVerticalGroup(
             eWowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -475,10 +495,15 @@ public class Categorias extends javax.swing.JFrame {
         Tab3.addTab("WoW", eWow);
         asignarResultados(3);
 
+        eAnime.setBackground(new java.awt.Color(51, 153, 255));
+
+        totalResp.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         totalResp.setText("Totales de respuestas:");
 
+        totalAcertadas.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         totalAcertadas.setText("Total acertadas:");
 
+        totalFalladas.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         totalFalladas.setText("Total falladas");
 
         acertadas.setEditable(false);
@@ -524,7 +549,7 @@ public class Categorias extends javax.swing.JFrame {
                         .addComponent(totalFalladas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(29, 29, 29)
                         .addComponent(falladas, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(124, Short.MAX_VALUE))
+                .addContainerGap(77, Short.MAX_VALUE))
             .addGroup(eAnimeLayout.createSequentialGroup()
                 .addGap(79, 79, 79)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -547,7 +572,7 @@ public class Categorias extends javax.swing.JFrame {
                     .addComponent(falladas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(55, Short.MAX_VALUE))
+                .addContainerGap(49, Short.MAX_VALUE))
         );
 
         Tab3.addTab("Anime", eAnime);

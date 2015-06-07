@@ -12,15 +12,16 @@
     <Property name="title" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
       <Connection code="&quot;Test de &quot;+titulo&#xd;&#xa;     " type="code"/>
     </Property>
-    <Property name="autoRequestFocus" type="boolean" value="false"/>
+    <Property name="alwaysOnTop" type="boolean" value="true"/>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
       <Color blue="66" green="33" red="0" type="rgb"/>
     </Property>
     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
       <Color id="Cursor Por defecto"/>
     </Property>
+    <Property name="focusable" type="boolean" value="false"/>
     <Property name="location" type="java.awt.Point" editor="org.netbeans.beaninfo.editors.PointEditor">
-      <Point value="[250, 26]"/>
+      <Point value="[250, 25]"/>
     </Property>
     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="[533, 593]"/>

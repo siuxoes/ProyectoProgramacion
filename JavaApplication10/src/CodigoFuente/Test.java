@@ -89,10 +89,11 @@ public final class Test extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Test de "+titulo
         );
-        setAutoRequestFocus(false);
+        setAlwaysOnTop(true);
         setBackground(new java.awt.Color(0, 51, 102));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setLocation(new java.awt.Point(250, 26));
+        setFocusable(false);
+        setLocation(new java.awt.Point(250, 25));
         setMaximumSize(new java.awt.Dimension(533, 593));
         setMinimumSize(new java.awt.Dimension(533, 593));
         setPreferredSize(new java.awt.Dimension(600, 637));
@@ -445,8 +446,8 @@ public final class Test extends javax.swing.JFrame {
      * @param p1 
      */
     public void tieneImagen(Pregunta p1){
-        try{
-     if(!p1.getNombreImagen().equals("")){
+     try{
+        if(!p1.getNombreImagen().equals("")){
          verImagen.setEnabled(true);
          jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/"+p1.getNombreImagen())));
      }
