@@ -783,12 +783,12 @@ public class Categorias extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-            Desktop d=Desktop.getDesktop();
+           Desktop d=Desktop.getDesktop();
         try {
             d.browse((getClass().getResource("/creditos/index.html").toURI()));
         } catch (URISyntaxException | IOException ex) {
         }
-
+      
     }//GEN-LAST:event_jButton1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
