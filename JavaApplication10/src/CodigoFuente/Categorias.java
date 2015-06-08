@@ -1,6 +1,7 @@
 package CodigoFuente;
 
 import java.awt.Desktop;
+import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -100,6 +101,11 @@ public class Categorias extends javax.swing.JFrame {
         totales = new javax.swing.JTextField();
         falladas = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Seleccione una categoría");
@@ -109,15 +115,16 @@ public class Categorias extends javax.swing.JFrame {
         setFocusable(false);
         setIconImage(getIconImage());
         setIconImages(null);
+        setLocation(new java.awt.Point(250, 25));
         setMaximumSize(new java.awt.Dimension(533, 593));
         setMinimumSize(new java.awt.Dimension(533, 593));
         setResizable(false);
 
-        jTabbedPane2.setBackground(new java.awt.Color(153, 153, 153));
+        jTabbedPane2.setBackground(new java.awt.Color(255, 255, 255));
         jTabbedPane2.setMaximumSize(new java.awt.Dimension(533, 593));
         jTabbedPane2.setMinimumSize(new java.awt.Dimension(533, 593));
 
-        jPanel3.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
 
         Lol1.setBackground(new java.awt.Color(153, 153, 153));
         Lol1.setFont(cf.MyFont(1, 22f));
@@ -201,18 +208,19 @@ public class Categorias extends javax.swing.JFrame {
 
         jTabbedPane2.addTab("Principal", jPanel3);
 
-        jPanel4.setBackground(new java.awt.Color(51, 153, 255));
+        jPanel4.setBackground(new java.awt.Color(102, 102, 102));
 
+        Tab3.setBackground(new java.awt.Color(255, 255, 255));
         Tab3.setMaximumSize(new java.awt.Dimension(528, 537));
         Tab3.setMinimumSize(new java.awt.Dimension(528, 537));
         Tab3.setPreferredSize(new java.awt.Dimension(528, 537));
 
-        jPanel1.setBackground(new java.awt.Color(51, 153, 255));
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
         jPanel1.setMaximumSize(new java.awt.Dimension(528, 537));
         jPanel1.setMinimumSize(new java.awt.Dimension(528, 537));
         jPanel1.setPreferredSize(new java.awt.Dimension(528, 537));
 
-        jButton5.setBackground(new java.awt.Color(102, 204, 255));
+        jButton5.setBackground(new java.awt.Color(153, 153, 153));
         jButton5.setText("Estadísticas LOL");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -220,7 +228,7 @@ public class Categorias extends javax.swing.JFrame {
             }
         });
 
-        jButton6.setBackground(new java.awt.Color(102, 204, 255));
+        jButton6.setBackground(new java.awt.Color(153, 153, 153));
         jButton6.setText("Estadísticas WoW");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -228,7 +236,7 @@ public class Categorias extends javax.swing.JFrame {
             }
         });
 
-        jButton7.setBackground(new java.awt.Color(102, 204, 255));
+        jButton7.setBackground(new java.awt.Color(153, 153, 153));
         jButton7.setText("Estadísticas Anime");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -236,7 +244,7 @@ public class Categorias extends javax.swing.JFrame {
             }
         });
 
-        jButton8.setBackground(new java.awt.Color(102, 204, 255));
+        jButton8.setBackground(new java.awt.Color(153, 153, 153));
         jButton8.setText("Estadísticas Generales");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -244,54 +252,54 @@ public class Categorias extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logo.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Creditos/images/TriviaWars.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(127, 127, 127)
+                .addGap(88, 88, 88)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(149, 149, 149))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(84, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 236, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28))
+                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(25, 25, 25))
         );
 
         Tab3.addTab("Seleccionar estadísticas", jPanel1);
 
-        eGenerales.setBackground(new java.awt.Color(51, 153, 255));
+        eGenerales.setBackground(new java.awt.Color(102, 102, 102));
         eGenerales.setMaximumSize(new java.awt.Dimension(528, 537));
         eGenerales.setMinimumSize(new java.awt.Dimension(528, 537));
 
         totalResp4.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        totalResp4.setForeground(new java.awt.Color(255, 255, 255));
         totalResp4.setText("Totales de respuestas:");
 
         totalAcertadas3.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        totalAcertadas3.setForeground(new java.awt.Color(255, 255, 255));
         totalAcertadas3.setText("Total acertadas:");
 
         totalFalladas3.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        totalFalladas3.setForeground(new java.awt.Color(255, 255, 255));
         totalFalladas3.setText("Total falladas");
 
         acertadas3.setEditable(false);
@@ -361,17 +369,20 @@ public class Categorias extends javax.swing.JFrame {
         Tab3.addTab("Generales", eGenerales);
         asignarResultados(0);
 
-        eLol.setBackground(new java.awt.Color(51, 153, 255));
+        eLol.setBackground(new java.awt.Color(102, 102, 102));
         eLol.setMaximumSize(new java.awt.Dimension(528, 537));
         eLol.setMinimumSize(new java.awt.Dimension(528, 537));
 
         totalResp3.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        totalResp3.setForeground(new java.awt.Color(255, 255, 255));
         totalResp3.setText("Totales de respuestas:");
 
         totalAcertadas2.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        totalAcertadas2.setForeground(new java.awt.Color(255, 255, 255));
         totalAcertadas2.setText("Total acertadas:");
 
         totalFalladas2.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        totalFalladas2.setForeground(new java.awt.Color(255, 255, 255));
         totalFalladas2.setText("Total falladas");
 
         acertadas2.setEditable(false);
@@ -440,15 +451,18 @@ public class Categorias extends javax.swing.JFrame {
         Tab3.addTab("LoL", eLol);
         asignarResultados(1);
 
-        eWow.setBackground(new java.awt.Color(51, 153, 255));
+        eWow.setBackground(new java.awt.Color(102, 102, 102));
 
         totalResp2.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        totalResp2.setForeground(new java.awt.Color(255, 255, 255));
         totalResp2.setText("Totales de respuestas:");
 
         totalAcertadas1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        totalAcertadas1.setForeground(new java.awt.Color(255, 255, 255));
         totalAcertadas1.setText("Total acertadas:");
 
         totalFalladas1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        totalFalladas1.setForeground(new java.awt.Color(255, 255, 255));
         totalFalladas1.setText("Total falladas");
 
         acertadas1.setEditable(false);
@@ -518,15 +532,18 @@ public class Categorias extends javax.swing.JFrame {
         Tab3.addTab("WoW", eWow);
         asignarResultados(3);
 
-        eAnime.setBackground(new java.awt.Color(51, 153, 255));
+        eAnime.setBackground(new java.awt.Color(102, 102, 102));
 
         totalResp.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        totalResp.setForeground(new java.awt.Color(255, 255, 255));
         totalResp.setText("Totales de respuestas:");
 
         totalAcertadas.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        totalAcertadas.setForeground(new java.awt.Color(255, 255, 255));
         totalAcertadas.setText("Total acertadas:");
 
         totalFalladas.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        totalFalladas.setForeground(new java.awt.Color(255, 255, 255));
         totalFalladas.setText("Total falladas");
 
         acertadas.setEditable(false);
@@ -613,7 +630,56 @@ public class Categorias extends javax.swing.JFrame {
             .addComponent(Tab3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jTabbedPane2.addTab("Estadisticas", jPanel4);
+        jTabbedPane2.addTab("Estadísticas", jPanel4);
+
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
+
+        jButton1.setBackground(new java.awt.Color(153, 153, 153));
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton1.setText("Ver Créditos");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel7.setText("Para ver los créditos");
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel9.setText("Haga click en el botón:");
+
+        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel10.setText("Realizados por Cristian Bedolla");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(93, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel9)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(67, 67, 67))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(63, 63, 63)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(177, Short.MAX_VALUE))
+        );
+
+        jTabbedPane2.addTab("Créditos", jPanel2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -713,19 +779,17 @@ public class Categorias extends javax.swing.JFrame {
     }//GEN-LAST:event_falladas3ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        if(Desktop.isDesktopSupported())
-        {
-          
-            try {
-                Desktop.getDesktop().browse(new URI("http://www.example.com"));
-            } catch (IOException ex) {
-                Logger.getLogger(Categorias.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (URISyntaxException ex) {
-                Logger.getLogger(Categorias.class.getName()).log(Level.SEVERE, null, ex);
-            }
-           
-        }
+      
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+            Desktop d=Desktop.getDesktop();
+        try {
+            d.browse((getClass().getResource("/creditos/index.html").toURI()));
+        } catch (URISyntaxException | IOException ex) {
+        }
+
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Anime;
@@ -744,18 +808,23 @@ public class Categorias extends javax.swing.JFrame {
     private javax.swing.JTextField falladas1;
     private javax.swing.JTextField falladas2;
     private javax.swing.JTextField falladas3;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JTabbedPane jTabbedPane2;

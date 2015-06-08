@@ -97,23 +97,27 @@ public final class Test extends javax.swing.JFrame {
         setBackground(new java.awt.Color(0, 51, 102));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setFocusable(false);
-        setMaximumSize(new java.awt.Dimension(533, 593));
-        setMinimumSize(new java.awt.Dimension(533, 593));
-        setPreferredSize(new java.awt.Dimension(600, 637));
+        setLocation(new java.awt.Point(250, 25));
+        setMaximumSize(new java.awt.Dimension(590, 640));
+        setMinimumSize(new java.awt.Dimension(590, 640));
+        setPreferredSize(new java.awt.Dimension(590, 640));
         setResizable(false);
 
         Tab2.setBackground(new java.awt.Color(255, 255, 255));
         Tab2.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
 
+        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
         jPanel3.setMaximumSize(new java.awt.Dimension(585, 637));
         jPanel3.setMinimumSize(new java.awt.Dimension(585, 637));
         jPanel3.setName(""); // NOI18N
         jPanel3.setPreferredSize(new java.awt.Dimension(585, 637));
 
         Titulo.setFont(cf.MyFont(1, 22f));
+        Titulo.setForeground(new java.awt.Color(255, 255, 255));
         Titulo.setText(titulo);
 
         contador.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        contador.setForeground(new java.awt.Color(255, 255, 255));
         contador.setText(contPreguntas +" de 10 preguntas");
 
         fallaste.setBackground(new java.awt.Color(255, 0, 51));
@@ -132,7 +136,7 @@ public final class Test extends javax.swing.JFrame {
         acertaste.setForeground(new java.awt.Color(51, 255, 51));
         acertaste.setText("Acertaste");
 
-        a.setBackground(new java.awt.Color(204, 204, 204));
+        a.setBackground(new java.awt.Color(153, 153, 153));
         a.setText(p1.getOpcionA());
         a.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -145,7 +149,7 @@ public final class Test extends javax.swing.JFrame {
             }
         });
 
-        b.setBackground(new java.awt.Color(204, 204, 204));
+        b.setBackground(new java.awt.Color(153, 153, 153));
         b.setText(p1.getOpcionB());
         b.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -153,7 +157,7 @@ public final class Test extends javax.swing.JFrame {
             }
         });
 
-        c.setBackground(new java.awt.Color(204, 204, 204));
+        c.setBackground(new java.awt.Color(153, 153, 153));
         c.setText(p1.getOpcionC());
         c.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -161,7 +165,7 @@ public final class Test extends javax.swing.JFrame {
             }
         });
 
-        d.setBackground(new java.awt.Color(204, 204, 204));
+        d.setBackground(new java.awt.Color(153, 153, 153));
         d.setText(p1.getOpcionD());
         d.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -169,11 +173,14 @@ public final class Test extends javax.swing.JFrame {
             }
         });
 
+        Acertadas.setForeground(new java.awt.Color(255, 255, 255));
         Acertadas.setText("Acertadas: " +acertadas
         );
 
+        Falladas.setForeground(new java.awt.Color(255, 255, 255));
         Falladas.setText("Falladas: "+falladas);
 
+        jButton1.setBackground(new java.awt.Color(153, 153, 153));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/backarrow_2.png"))); // NOI18N
         jButton1.setText("Abandonar y volver a categorías");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -182,6 +189,7 @@ public final class Test extends javax.swing.JFrame {
             }
         });
 
+        verImagen.setBackground(new java.awt.Color(153, 153, 153));
         verImagen.setText("Ver Imagen");
         verImagen.setToolTipText("");
         verImagen.setFocusCycleRoot(true);
@@ -201,7 +209,7 @@ public final class Test extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 437, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(verImagen, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
+                        .addComponent(verImagen, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE)
                         .addGap(23, 23, 23))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
@@ -272,6 +280,8 @@ public final class Test extends javax.swing.JFrame {
         tieneImagen(p1);
 
         Tab2.addTab("Test", jPanel3);
+
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setAutoscrolls(true);
@@ -376,6 +386,7 @@ public final class Test extends javax.swing.JFrame {
             d.setVisible(false);
             Enunciado.setVisible(false);
             contador.setVisible(false);
+            verImagen.setVisible(false);
             jButton1.setText("Volver a Categorías");
             acertaste.setVisible(false);
             fallaste.setVisible(false);
