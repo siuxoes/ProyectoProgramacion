@@ -464,7 +464,9 @@ public final class Test extends javax.swing.JFrame {
         if(!p1.getNombreImagen().equals("")){
          verImagen.setEnabled(true);
          jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/"+p1.getNombreImagen())));
-     }
+     }else{
+                     jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("")));
+        }
         }catch(NullPointerException npe){}
 
     }
