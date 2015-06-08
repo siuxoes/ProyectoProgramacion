@@ -18,9 +18,6 @@
     <Property name="iconImages" type="java.util.List" editor="org.netbeans.modules.form.ComponentChooserEditor">
       <ComponentRef name="null"/>
     </Property>
-    <Property name="location" type="java.awt.Point" editor="org.netbeans.beaninfo.editors.PointEditor">
-      <Point value="[250, 25]"/>
-    </Property>
     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="[533, 593]"/>
     </Property>
@@ -166,6 +163,9 @@
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                   <Connection code="cf3.MyFont(1, 32f)" type="code"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagenes/animeiconpng.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Anime"/>
               </Properties>
@@ -368,10 +368,11 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jLabel2" min="-2" pref="349" max="-2" attributes="0"/>
                                   <Group type="102" attributes="0">
-                                      <EmptySpace min="-2" pref="112" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                           <Component id="totalResp4" alignment="0" max="32767" attributes="0"/>
                                           <Component id="totalFalladas3" alignment="0" max="32767" attributes="0"/>
@@ -383,10 +384,6 @@
                                           <Component id="falladas3" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
                                           <Component id="totales3" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
                                       </Group>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
-                                      <Component id="jLabel2" min="-2" pref="349" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace pref="82" max="32767" attributes="0"/>
@@ -503,10 +500,11 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                                   <Group type="102" attributes="0">
-                                      <EmptySpace min="-2" pref="112" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                           <Component id="totalResp3" alignment="0" max="32767" attributes="0"/>
                                           <Component id="totalFalladas2" alignment="0" max="32767" attributes="0"/>
@@ -518,10 +516,6 @@
                                           <Component id="falladas2" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
                                           <Component id="totales2" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
                                       </Group>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
-                                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace pref="82" max="32767" attributes="0"/>
@@ -546,9 +540,9 @@
                                   <Component id="totalFalladas2" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="falladas2" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="47" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -631,10 +625,11 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="112" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jLabel5" min="-2" pref="349" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                           <Component id="totalResp2" alignment="0" max="32767" attributes="0"/>
                                           <Component id="totalFalladas1" alignment="0" max="32767" attributes="0"/>
@@ -646,10 +641,6 @@
                                           <Component id="falladas1" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
                                           <Component id="totales1" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
                                       </Group>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
-                                      <Component id="jLabel5" min="-2" pref="349" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace pref="77" max="32767" attributes="0"/>
@@ -674,9 +665,9 @@
                                   <Component id="totalFalladas1" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="falladas1" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                               <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                              <EmptySpace pref="49" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -761,30 +752,33 @@
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="112" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="2" attributes="0">
-                                  <Group type="102" alignment="2" attributes="0">
-                                      <Component id="totalResp" max="32767" attributes="0"/>
-                                      <EmptySpace min="29" pref="29" max="29" attributes="0"/>
-                                      <Component id="totales" min="-2" pref="120" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="jLabel3" min="-2" pref="349" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="2" attributes="0">
-                                      <Component id="totalAcertadas" max="32767" attributes="0"/>
-                                      <EmptySpace min="29" pref="29" max="29" attributes="0"/>
-                                      <Component id="acertadas" min="-2" pref="120" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="2" attributes="0">
-                                      <Component id="totalFalladas" max="32767" attributes="0"/>
-                                      <EmptySpace min="29" pref="29" max="29" attributes="0"/>
-                                      <Component id="falladas" min="-2" pref="120" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="112" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="2" attributes="0">
+                                          <Group type="102" alignment="2" attributes="0">
+                                              <Component id="totalResp" max="32767" attributes="0"/>
+                                              <EmptySpace min="29" pref="29" max="29" attributes="0"/>
+                                              <Component id="totales" min="-2" pref="120" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="2" attributes="0">
+                                              <Component id="totalAcertadas" max="32767" attributes="0"/>
+                                              <EmptySpace min="29" pref="29" max="29" attributes="0"/>
+                                              <Component id="acertadas" min="-2" pref="120" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="2" attributes="0">
+                                              <Component id="totalFalladas" max="32767" attributes="0"/>
+                                              <EmptySpace min="29" pref="29" max="29" attributes="0"/>
+                                              <Component id="falladas" min="-2" pref="120" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
                                   </Group>
                               </Group>
                               <EmptySpace pref="77" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
-                              <Component id="jLabel3" min="-2" pref="349" max="-2" attributes="0"/>
-                              <EmptySpace pref="95" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>

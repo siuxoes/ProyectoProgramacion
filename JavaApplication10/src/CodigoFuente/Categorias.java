@@ -101,7 +101,6 @@ public class Categorias extends javax.swing.JFrame {
         setFocusable(false);
         setIconImage(getIconImage());
         setIconImages(null);
-        setLocation(new java.awt.Point(250, 25));
         setMaximumSize(new java.awt.Dimension(533, 593));
         setMinimumSize(new java.awt.Dimension(533, 593));
         setResizable(false);
@@ -134,6 +133,7 @@ public class Categorias extends javax.swing.JFrame {
 
         Anime.setBackground(new java.awt.Color(102, 204, 255));
         Anime.setFont(cf3.MyFont(1, 32f));
+        Anime.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/animeiconpng.png"))); // NOI18N
         Anime.setText("Anime");
         Anime.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -294,9 +294,10 @@ public class Categorias extends javax.swing.JFrame {
         eGeneralesLayout.setHorizontalGroup(
             eGeneralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(eGeneralesLayout.createSequentialGroup()
-                .addGroup(eGeneralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(97, 97, 97)
+                .addGroup(eGeneralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(eGeneralesLayout.createSequentialGroup()
-                        .addGap(112, 112, 112)
                         .addGroup(eGeneralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(totalResp4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(totalFalladas3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -305,10 +306,7 @@ public class Categorias extends javax.swing.JFrame {
                         .addGroup(eGeneralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(acertadas3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(falladas3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(totales3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(eGeneralesLayout.createSequentialGroup()
-                        .addGap(89, 89, 89)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(totales3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(82, Short.MAX_VALUE))
         );
         eGeneralesLayout.setVerticalGroup(
@@ -375,9 +373,10 @@ public class Categorias extends javax.swing.JFrame {
         eLolLayout.setHorizontalGroup(
             eLolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(eLolLayout.createSequentialGroup()
-                .addGroup(eLolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(96, 96, 96)
+                .addGroup(eLolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1)
                     .addGroup(eLolLayout.createSequentialGroup()
-                        .addGap(112, 112, 112)
                         .addGroup(eLolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(totalResp3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(totalFalladas2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -386,10 +385,7 @@ public class Categorias extends javax.swing.JFrame {
                         .addGroup(eLolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(acertadas2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(falladas2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(totales2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(eLolLayout.createSequentialGroup()
-                        .addGap(76, 76, 76)
-                        .addComponent(jLabel1)))
+                            .addComponent(totales2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(82, Short.MAX_VALUE))
         );
         eLolLayout.setVerticalGroup(
@@ -407,9 +403,9 @@ public class Categorias extends javax.swing.JFrame {
                 .addGroup(eLolLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(totalFalladas2)
                     .addComponent(falladas2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
+                .addGap(33, 33, 33)
                 .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
 
         Tab3.addTab("LoL", eLol);
@@ -455,9 +451,10 @@ public class Categorias extends javax.swing.JFrame {
         eWowLayout.setHorizontalGroup(
             eWowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(eWowLayout.createSequentialGroup()
-                .addGroup(eWowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(97, 97, 97)
+                .addGroup(eWowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(eWowLayout.createSequentialGroup()
-                        .addGap(112, 112, 112)
                         .addGroup(eWowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(totalResp2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(totalFalladas1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -466,10 +463,7 @@ public class Categorias extends javax.swing.JFrame {
                         .addGroup(eWowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(acertadas1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(falladas1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(totales1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(eWowLayout.createSequentialGroup()
-                        .addGap(82, 82, 82)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(totales1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(77, Short.MAX_VALUE))
         );
         eWowLayout.setVerticalGroup(
@@ -487,9 +481,9 @@ public class Categorias extends javax.swing.JFrame {
                 .addGroup(eWowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(totalFalladas1)
                     .addComponent(falladas1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(31, 31, 31)
                 .addComponent(jLabel5)
-                .addGap(61, 61, 61))
+                .addContainerGap(49, Short.MAX_VALUE))
         );
 
         Tab3.addTab("WoW", eWow);
@@ -535,25 +529,26 @@ public class Categorias extends javax.swing.JFrame {
         eAnimeLayout.setHorizontalGroup(
             eAnimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(eAnimeLayout.createSequentialGroup()
-                .addGap(112, 112, 112)
-                .addGroup(eAnimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                .addGroup(eAnimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(eAnimeLayout.createSequentialGroup()
-                        .addComponent(totalResp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(29, 29, 29)
-                        .addComponent(totales, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(eAnimeLayout.createSequentialGroup()
-                        .addComponent(totalAcertadas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(29, 29, 29)
-                        .addComponent(acertadas, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(eAnimeLayout.createSequentialGroup()
-                        .addComponent(totalFalladas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(29, 29, 29)
-                        .addComponent(falladas, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(112, 112, 112)
+                        .addGroup(eAnimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addGroup(eAnimeLayout.createSequentialGroup()
+                                .addComponent(totalResp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(29, 29, 29)
+                                .addComponent(totales, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(eAnimeLayout.createSequentialGroup()
+                                .addComponent(totalAcertadas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(29, 29, 29)
+                                .addComponent(acertadas, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(eAnimeLayout.createSequentialGroup()
+                                .addComponent(totalFalladas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(29, 29, 29)
+                                .addComponent(falladas, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(77, Short.MAX_VALUE))
-            .addGroup(eAnimeLayout.createSequentialGroup()
-                .addGap(79, 79, 79)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(95, Short.MAX_VALUE))
         );
         eAnimeLayout.setVerticalGroup(
             eAnimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
