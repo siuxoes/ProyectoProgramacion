@@ -1,5 +1,6 @@
 package CodigoFuente;
 
+import java.awt.Color;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -30,6 +31,7 @@ public class Graficos {
             dcd.addValue(acertadas, "Acertadas", "");
             dcd.addValue(falladas, "Falladas", "");  
             JFreeChart jf = ChartFactory.createBarChart3D("", "", "Respuestas", dcd, PlotOrientation.HORIZONTAL, true, true, true);
+            jf.setBackgroundPaint(Color.WHITE);
             fichero = new File("./src/imagenes/"+nombre+".png");
             if(fichero.exists()){
                 fichero.delete();
