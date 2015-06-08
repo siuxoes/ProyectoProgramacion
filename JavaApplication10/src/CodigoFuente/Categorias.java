@@ -1,5 +1,12 @@
 package CodigoFuente;
 
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class Categorias extends javax.swing.JFrame {
  
     private Principal p1;
@@ -52,6 +59,7 @@ public class Categorias extends javax.swing.JFrame {
         FuentePersonalizada cf3 = new FuentePersonalizada("ANIME.ttf");
         Anime = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         Tab3 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
@@ -109,9 +117,9 @@ public class Categorias extends javax.swing.JFrame {
         jTabbedPane2.setMaximumSize(new java.awt.Dimension(533, 593));
         jTabbedPane2.setMinimumSize(new java.awt.Dimension(533, 593));
 
-        jPanel3.setBackground(new java.awt.Color(51, 153, 255));
+        jPanel3.setBackground(new java.awt.Color(0, 0, 0));
 
-        Lol1.setBackground(new java.awt.Color(102, 204, 255));
+        Lol1.setBackground(new java.awt.Color(153, 153, 153));
         Lol1.setFont(cf.MyFont(1, 22f));
         Lol1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/loliconpng.png"))); // NOI18N
         Lol1.setText("LoL");
@@ -121,7 +129,7 @@ public class Categorias extends javax.swing.JFrame {
             }
         });
 
-        WoW.setBackground(new java.awt.Color(102, 204, 255));
+        WoW.setBackground(new java.awt.Color(153, 153, 153));
         WoW.setFont(cf2.MyFont(1, 22f));
         WoW.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/wowiconpng.png"))); // NOI18N
         WoW.setText("WoW");
@@ -131,7 +139,7 @@ public class Categorias extends javax.swing.JFrame {
             }
         });
 
-        Anime.setBackground(new java.awt.Color(102, 204, 255));
+        Anime.setBackground(new java.awt.Color(153, 153, 153));
         Anime.setFont(cf3.MyFont(1, 32f));
         Anime.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/animeiconpng.png"))); // NOI18N
         Anime.setText("Anime");
@@ -141,20 +149,36 @@ public class Categorias extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logo.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Creditos/images/TriviaWars.png"))); // NOI18N
+
+        jButton3.setText("Ver créditos");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(84, 84, 84)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(Anime, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Lol1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(WoW, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(88, 88, 88))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(84, 84, 84)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(Anime, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Lol1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(WoW, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addContainerGap(86, Short.MAX_VALUE)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(86, 86, 86))
+            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel3Layout.createSequentialGroup()
+                    .addGap(178, 178, 178)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(179, Short.MAX_VALUE)))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -168,6 +192,11 @@ public class Categorias extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(WoW, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(42, 42, 42))
+            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel3Layout.createSequentialGroup()
+                    .addGap(255, 255, 255)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(256, Short.MAX_VALUE)))
         );
 
         jTabbedPane2.addTab("Principal", jPanel3);
@@ -683,6 +712,21 @@ public class Categorias extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_falladas3ActionPerformed
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        if(Desktop.isDesktopSupported())
+        {
+          
+            try {
+                Desktop.getDesktop().browse(new URI("http://www.example.com"));
+            } catch (IOException ex) {
+                Logger.getLogger(Categorias.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (URISyntaxException ex) {
+                Logger.getLogger(Categorias.class.getName()).log(Level.SEVERE, null, ex);
+            }
+           
+        }
+    }//GEN-LAST:event_jButton3ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Anime;
     private javax.swing.JButton Lol1;
@@ -700,6 +744,7 @@ public class Categorias extends javax.swing.JFrame {
     private javax.swing.JTextField falladas1;
     private javax.swing.JTextField falladas2;
     private javax.swing.JTextField falladas3;
+    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;

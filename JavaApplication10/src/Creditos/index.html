@@ -1,0 +1,87 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" media="screen" href="css/styles.css" />
+        <script src="lib/modernizr.custom.96959.js"></script>
+        <script src="lib/prefixfree.min.js"></script>
+    </head>
+    <body>
+        <div id="loading">Loading...</div>
+        <div class="bg">
+            <div class="deathstar"><p class="end">The End</p></div>
+			
+        </div>
+        <div id="supported">
+            <div id="main-title"><img src="images/TriviaWars.png" /></div>
+            <div class="box">   
+                <h1>Créditos</h1>
+                
+            </div>
+            <div id="wrapper">
+                <div id="intro"> Hace  mucho tiempo en un módulo, muy , muy , lejano...</div>
+                <div id="crawling-txt">
+                    <div class="text">
+                        <div class="inner-txt">
+                            <p class="episode">EL COMIENZO DE ALGO NUEVO</p>
+                            <p class="subtitle">UNA NUEVA APLICACIÓN</p>
+                            <p>6 hombres se reunieron con el objetivo de completar un juego que les haría dudar,
+							un juego que pondría a prueba su valía, su ingenio, su  aguante, su capacidad...</p>
+                            <p>No era un juego cualquiera, era, su proyecto. 
+							Un proyecto en el que se jugaban la cualidad última de cualquier hombre  , ser un hombre.
+                            Era .....</p>
+							<p>"Una Batalla Trivial".</p>
+						    <p> String Programador="Sebastian" ;</p>
+							<p> String Refactorizador="Rodrigo" ;</p>
+							<p> String DiseñadorGráfico="Julio";</p>
+							<p> String DiseñadorGráfico="Yandros";</p>
+							<p> String HombreDeNegocios="Antonio";</p>
+							<p> String Administrador="Christian";</p>
+							
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="unsupported">Your browser doesn't seem to support CSS 3D transforms or HTML5 audio. </div>
+        <script>
+            /**
+             * This snippet of JS code takes care of the preloading of the audio files
+             * and start the animation once the browser is ready to play
+             * the audio. That way we are sure that the audio is in sync
+             * with the animation.
+             *
+             * If the browser cannot play audio files, the animation won't run.
+            **/
+            (function() {
+                var audio = document.createElement('audio'),
+                    done = function(classname) {
+                        document.body.className = classname;
+                    };
+
+                if (audio == null || !audio.canPlayType) {
+                    done('problem');
+                    return;
+                } 
+
+                if (audio.canPlayType('audio/mpeg')) {
+                    audio.src = 'audio/intro.mp3';
+                } else if (audio.canPlayType('audio/ogg')) {
+                    audio.src = 'audio/intro.ogg';
+                    audio.preload = 'auto';
+                } else {
+                    done('problem');
+                    return;
+                }
+
+                document.body.appendChild(audio);
+
+                audio.addEventListener('canplaythrough', function () {
+                    audio.play();
+                    done('running');
+                }, false);
+
+            }());
+        </script>
+    </body>
+</html>

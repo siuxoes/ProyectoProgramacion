@@ -1,6 +1,10 @@
 package CodigoFuente;
 
 import java.applet.AudioClip;
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.sql.SQLException;
 import java.util.LinkedList;
 import java.util.logging.Level;
@@ -93,7 +97,6 @@ public final class Test extends javax.swing.JFrame {
         setBackground(new java.awt.Color(0, 51, 102));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setFocusable(false);
-        setLocation(new java.awt.Point(250, 25));
         setMaximumSize(new java.awt.Dimension(533, 593));
         setMinimumSize(new java.awt.Dimension(533, 593));
         setPreferredSize(new java.awt.Dimension(600, 637));
